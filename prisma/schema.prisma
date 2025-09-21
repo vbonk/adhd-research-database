@@ -1,0 +1,243 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model ResearchEntry {
+  id                    String                @id @default(cuid())
+  title                 String
+  authors               String[]
+  journal               String
+  publicationDate       DateTime
+  doi                   String?
+  studyType             StudyType
+  evidenceLevel         EvidenceLevel
+  sampleSize            Int
+  createdAt             DateTime              @default(now())
+  updatedAt             DateTime              @updatedAt
+  addedDate             DateTime
+  lastReviewed          DateTime
+  
+  // Relationships
+  targetPopulation      TargetPopulation      @relation(fields: [targetPopulationId], references: [id])
+  targetPopulationId    String
+  methodology           Methodology           @relation(fields: [methodologyId], references: [id])
+  methodologyId         String
+  keyFindings           KeyFindings           @relation(fields: [keyFindingsId], references: [id])
+  keyFindingsId         String
+  workplaceRelevance    WorkplaceRelevance    @relation(fields: [workplaceRelevanceId], references: [id])
+  workplaceRelevanceId  String
+  qualityAssessment     QualityAssessment     @relation(fields: [qualityAssessmentId], references: [id])
+  qualityAssessmentId   String
+  clinicalApplications  ClinicalApplications  @relation(fields: [clinicalApplicationsId], references: [id])
+  clinicalApplicationsId String
+  
+  tags                  Tag[]                 @relation("ResearchEntryTags")
+  
+  @@map("research_entries")
+}
+
+model TargetPopulation {
+  id            String @id @default(cuid())
+  ageRange      String
+  gender        String
+  occupation    String
+  adhdSubtype   String
+  
+  researchEntries ResearchEntry[]
+  
+  @@map("target_populations")
+}
+
+model Methodology {
+  id                String   @id @default(cuid())
+  design            String
+  duration          String
+  primaryOutcomes   String[]
+  secondaryOutcomes String[]
+  
+  researchEntries ResearchEntry[]
+  
+  @@map("methodologies")
+}
+
+model KeyFindings {
+  id                  String  @id @default(cuid())
+  primaryResults      String
+  effectSizes         Json    // Store effect sizes as JSON
+  clinicalSignificance String
+  limitations         String[]
+  
+  researchEntries ResearchEntry[]
+  
+  @@map("key_findings")
+}
+
+model WorkplaceRelevance {
+  id                  String   @id @default(cuid())
+  productivityImpact  String
+  accommodationNeeds  String[]
+  careerImplications  String
+  
+  researchEntries ResearchEntry[]
+  
+  @@map("workplace_relevance")
+}
+
+model QualityAssessment {
+  id            String      @id @default(cuid())
+  riskOfBias    RiskLevel
+  gradeRating   GradeRating
+  reviewerNotes String
+  
+  researchEntries ResearchEntry[]
+  
+  @@map("quality_assessments")
+}
+
+model ClinicalApplications {
+  id                      String   @id @default(cuid())
+  diagnosticUtility       String
+  treatmentRecommendations String[]
+  monitoringParameters    String[]
+  
+  researchEntries ResearchEntry[]
+  
+  @@map("clinical_applications")
+}
+
+model Tag {
+  id    String @id @default(cuid())
+  name  String @unique
+  
+  researchEntries ResearchEntry[] @relation("ResearchEntryTags")
+  
+  @@map("tags")
+}
+
+model TreatmentRecommendation {
+  id                    String            @id @default(cuid())
+  condition             String
+  treatmentType         TreatmentType
+  interventionName      String
+  evidenceLevel         EvidenceLevel
+  effectSize            Float?
+  recommendationStrength RecommendationStrength
+  targetPopulation      String
+  contraindications     String[]
+  sideEffects           String[]
+  monitoringRequirements String[]
+  createdAt             DateTime          @default(now())
+  updatedAt             DateTime          @updatedAt
+  
+  @@map("treatment_recommendations")
+}
+
+model AssessmentTool {
+  id                String            @id @default(cuid())
+  name              String
+  acronym           String?
+  purpose           String
+  targetPopulation  String
+  administrationTime Int?             // in minutes
+  domains           String[]
+  psychometricProperties Json          // Store reliability, validity data as JSON
+  clinicalUtility   String
+  limitations       String[]
+  createdAt         DateTime          @default(now())
+  updatedAt         DateTime          @updatedAt
+  
+  @@map("assessment_tools")
+}
+
+model OutcomeMeasure {
+  id                String            @id @default(cuid())
+  name              String
+  domain            OutcomeDomain
+  measureType       MeasureType
+  description       String
+  scoringMethod     String
+  interpretationGuidelines String
+  clinicalSignificance String?
+  minimumDetectableChange Float?
+  createdAt         DateTime          @default(now())
+  updatedAt         DateTime          @updatedAt
+  
+  @@map("outcome_measures")
+}
+
+enum StudyType {
+  SYSTEMATIC_REVIEW
+  META_ANALYSIS
+  RCT
+  COHORT
+  CASE_CONTROL
+  CASE_SERIES
+  EXPERT_OPINION
+}
+
+enum EvidenceLevel {
+  LEVEL_1A  // Systematic review of RCTs
+  LEVEL_1B  // Individual RCT with narrow CI
+  LEVEL_2A  // Systematic review of cohort studies
+  LEVEL_2B  // Individual cohort study
+  LEVEL_3A  // Systematic review of case-control studies
+  LEVEL_3B  // Individual case-control study
+  LEVEL_4   // Case series
+  LEVEL_5   // Expert opinion
+}
+
+enum RiskLevel {
+  LOW
+  MODERATE
+  HIGH
+}
+
+enum GradeRating {
+  HIGH
+  MODERATE
+  LOW
+  VERY_LOW
+}
+
+enum TreatmentType {
+  PHARMACOLOGICAL
+  PSYCHOLOGICAL
+  BEHAVIORAL
+  NEUROSTIMULATION
+  LIFESTYLE
+  COMBINED
+}
+
+enum RecommendationStrength {
+  STRONG_FOR
+  CONDITIONAL_FOR
+  CONDITIONAL_AGAINST
+  STRONG_AGAINST
+}
+
+enum OutcomeDomain {
+  ADHD_SYMPTOMS
+  EXECUTIVE_FUNCTION
+  QUALITY_OF_LIFE
+  WORKPLACE_FUNCTIONING
+  ACADEMIC_PERFORMANCE
+  SOCIAL_FUNCTIONING
+  EMOTIONAL_REGULATION
+  COMORBID_SYMPTOMS
+}
+
+enum MeasureType {
+  SELF_REPORT
+  CLINICIAN_RATED
+  PERFORMANCE_BASED
+  PHYSIOLOGICAL
+  BEHAVIORAL_OBSERVATION
+}

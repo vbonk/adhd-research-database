@@ -1,0 +1,179 @@
+name: Security Validation
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    # Run security scans weekly on Sundays at 2 AM UTC
+    - cron: '0 2 * * 0'
+
+jobs:
+  dependency-scan:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '22.13.0'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Run npm audit
+      run: npm audit --audit-level high
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install Python dependencies
+      run: |
+        cd adhd_research_api
+        pip install -r requirements.txt
+        pip install safety bandit
+
+    - name: Run Python safety check
+      run: |
+        cd adhd_research_api
+        safety check -r requirements.txt
+
+    - name: Run Bandit security linter
+      run: |
+        cd adhd_research_api
+        bandit -r src/ -f json -o bandit-report.json || true
+
+    - name: Upload Bandit report
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: bandit-security-report
+        path: adhd_research_api/bandit-report.json
+
+  secret-scan:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Run TruffleHog OSS
+      uses: trufflesecurity/trufflehog@main
+      with:
+        path: ./
+        base: main
+        head: HEAD
+        extra_args: --debug --only-verified
+
+  code-quality:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install code quality tools
+      run: |
+        pip install flake8 black isort
+
+    - name: Run flake8
+      run: |
+        cd adhd_research_api
+        flake8 src/ --count --select=E9,F63,F7,F82 --show-source --statistics
+
+    - name: Check code formatting with black
+      run: |
+        cd adhd_research_api
+        black --check src/
+
+    - name: Check import sorting
+      run: |
+        cd adhd_research_api
+        isort --check-only src/
+
+  database-security:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:14
+        env:
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: adhd_research_test
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 5432:5432
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '22.13.0'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Set up test database
+      run: |
+        echo 'DATABASE_URL="postgresql://postgres:postgres@localhost:5432/adhd_research_test?schema=public"' > .env
+
+    - name: Run Prisma migrations
+      run: |
+        npx prisma migrate deploy
+        npx prisma generate
+
+    - name: Validate database schema
+      run: npx prisma validate
+
+    - name: Check for SQL injection vulnerabilities
+      run: |
+        echo "Checking database queries for potential SQL injection vulnerabilities"
+        grep -r "query_raw\|executeRaw" . --include="*.py" --include="*.js" || echo "No raw queries found"
+
+  container-security:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Build Docker image
+      run: |
+        cat > Dockerfile << 'EOF'
+        FROM python:3.11-slim
+        RUN apt-get update && apt-get install -y postgresql-client curl && rm -rf /var/lib/apt/lists/*
+        RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash - && apt-get install -y nodejs
+        WORKDIR /app
+        COPY package*.json ./
+        COPY adhd_research_api/requirements.txt ./
+        RUN npm install && pip install -r requirements.txt
+        COPY . .
+        RUN npx prisma generate
+        EXPOSE 5000
+        CMD ["python", "adhd_research_api/src/main.py"]
+        EOF
+        docker build -t adhd-research-db:latest .
+
+    - name: Run Trivy vulnerability scanner
+      uses: aquasecurity/trivy-action@master
+      with:
+        image-ref: 'adhd-research-db:latest'
+        format: 'sarif'
+        output: 'trivy-results.sarif'
+
+    - name: Upload Trivy scan results
+      uses: github/codeql-action/upload-sarif@v2
+      if: always()
+      with:
+        sarif_file: 'trivy-results.sarif'
+

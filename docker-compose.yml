@@ -1,0 +1,70 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:14
+    container_name: adhd-research-postgres
+    environment:
+      POSTGRES_DB: adhd_research
+      POSTGRES_USER: adhd_user
+      POSTGRES_PASSWORD: adhd_password
+      POSTGRES_INITDB_ARGS: "--encoding=UTF-8"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-scripts:/docker-entrypoint-initdb.d
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U adhd_user -d adhd_research"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - adhd-network
+
+  app:
+    build: .
+    container_name: adhd-research-app
+    environment:
+      DATABASE_URL: "postgresql://adhd_user:adhd_password@postgres:5432/adhd_research?schema=public"
+      FLASK_ENV: "production"
+      FLASK_DEBUG: "false"
+    ports:
+      - "5000:5000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - ./adhd_research_api/src:/app/adhd_research_api/src
+      - ./knowledge_base:/app/knowledge_base
+    networks:
+      - adhd-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+  adminer:
+    image: adminer:4.8.1
+    container_name: adhd-research-adminer
+    ports:
+      - "8080:8080"
+    environment:
+      ADMINER_DEFAULT_SERVER: postgres
+    depends_on:
+      - postgres
+    networks:
+      - adhd-network
+    profiles:
+      - dev
+
+volumes:
+  postgres_data:
+    driver: local
+
+networks:
+  adhd-network:
+    driver: bridge
+
