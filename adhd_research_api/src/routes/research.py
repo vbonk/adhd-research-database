@@ -86,27 +86,27 @@ def get_research_stats():
         
         # Evidence level distribution
         evidence_levels = prisma.query_raw("""
-            SELECT evidence_level, COUNT(*) as count 
+            SELECT "evidenceLevel", COUNT(*) as count 
             FROM research_entries 
-            GROUP BY evidence_level 
-            ORDER BY evidence_level;
+            GROUP BY "evidenceLevel" 
+            ORDER BY "evidenceLevel";
         """)
         stats['evidence_level_distribution'] = evidence_levels
         
         # Study type distribution
         study_types = prisma.query_raw("""
-            SELECT study_type, COUNT(*) as count 
+            SELECT "studyType", COUNT(*) as count 
             FROM research_entries 
-            GROUP BY study_type 
+            GROUP BY "studyType" 
             ORDER BY count DESC;
         """)
         stats['study_type_distribution'] = study_types
         
         # Recent additions
         recent = prisma.query_raw("""
-            SELECT title, added_date 
+            SELECT title, "addedDate" 
             FROM research_entries 
-            ORDER BY added_date DESC 
+            ORDER BY "addedDate" DESC 
             LIMIT 5;
         """)
         stats['recent_additions'] = recent

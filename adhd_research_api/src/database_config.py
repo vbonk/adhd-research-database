@@ -7,14 +7,14 @@ class PrismaClient:
     """Simple wrapper for Prisma CLI operations"""
     
     def __init__(self, schema_path: str = None):
-        self.schema_path = schema_path or "/home/ubuntu/add_research_project/prisma/schema.prisma"
-        self.db_url = "postgresql://adhd_user:adhd_password@localhost:5432/adhd_research?schema=public"
+        self.schema_path = schema_path or "/Users/tony/Projects/adhd-research-database/prisma/schema.prisma"
+        self.db_url = "postgresql://adhd_user:adhd_password@localhost:5432/adhd_research"
     
     def query_raw(self, query: str) -> List[Dict[str, Any]]:
         """Execute raw SQL query using psql"""
         try:
             cmd = [
-                "psql", 
+                "/opt/homebrew/opt/postgresql@14/bin/psql", 
                 self.db_url,
                 "-c", query,
                 "-t",  # tuples only
@@ -27,22 +27,34 @@ class PrismaClient:
             if not lines or not lines[0]:
                 return []
             
-            # Simple CSV parsing (assuming no commas in data)
-            headers = lines[0].split(',') if len(lines) > 1 else []
-            data = []
+            # Handle simple single value results (like COUNT)
+            if len(lines) == 1 and lines[0].strip() and not ',' in lines[0]:
+                # Single value result (like COUNT)
+                return [{'count': int(lines[0].strip())}]
             
-            for line in lines[1:] if len(lines) > 1 else lines:
+            # Handle CSV data (no headers in psql CSV output)
+            data = []
+            for line in lines:
                 if line.strip():
-                    values = line.split(',')
-                    if headers:
-                        row = dict(zip(headers, values))
+                    # Split by comma, but handle quoted fields
+                    import csv
+                    import io
+                    csv_reader = csv.reader(io.StringIO(line))
+                    values = next(csv_reader)
+                    
+                    # For now, return as simple dict with indexed keys
+                    # This is a simplified approach - in production you'd want proper column names
+                    if len(values) == 1:
+                        row = {"result": values[0]}
                     else:
-                        row = {"result": line}
+                        row = {f"col_{i}": value for i, value in enumerate(values)}
                     data.append(row)
             
             return data
         except subprocess.CalledProcessError as e:
             print(f"Database query error: {e}")
+            print(f"Command output: {e.stdout}")
+            print(f"Command error: {e.stderr}")
             return []
     
     def find_many_research_entries(self, include_relations: bool = True) -> List[Dict[str, Any]]:
@@ -50,27 +62,66 @@ class PrismaClient:
         if include_relations:
             query = """
             SELECT 
-                re.id, re.title, re.authors, re.journal, re.publication_date,
-                re.doi, re.study_type, re.evidence_level, re.sample_size,
-                tp.age_range, tp.gender, tp.occupation, tp.adhd_subtype,
+                re.id, re.title, re.authors::text, re.journal, re."publicationDate"::text,
+                re.doi, re."studyType", re."evidenceLevel", re."sampleSize"::text,
+                tp."ageRange", tp.gender, tp.occupation, tp."adhdSubtype",
                 m.design, m.duration,
-                kf.primary_results, kf.clinical_significance,
-                wr.productivity_impact, wr.career_implications,
-                qa.risk_of_bias, qa.grade_rating,
-                ca.diagnostic_utility
+                kf."primaryResults", kf."clinicalSignificance",
+                wr."productivityImpact", wr."careerImplications",
+                qa."riskOfBias", qa."gradeRating",
+                ca."diagnosticUtility"
             FROM research_entries re
-            LEFT JOIN target_populations tp ON re.target_population_id = tp.id
-            LEFT JOIN methodologies m ON re.methodology_id = m.id
-            LEFT JOIN key_findings kf ON re.key_findings_id = kf.id
-            LEFT JOIN workplace_relevance wr ON re.workplace_relevance_id = wr.id
-            LEFT JOIN quality_assessments qa ON re.quality_assessment_id = qa.id
-            LEFT JOIN clinical_applications ca ON re.clinical_applications_id = ca.id
-            ORDER BY re.publication_date DESC;
+            LEFT JOIN target_populations tp ON re."targetPopulationId" = tp.id
+            LEFT JOIN methodologies m ON re."methodologyId" = m.id
+            LEFT JOIN key_findings kf ON re."keyFindingsId" = kf.id
+            LEFT JOIN workplace_relevance wr ON re."workplaceRelevanceId" = wr.id
+            LEFT JOIN quality_assessments qa ON re."qualityAssessmentId" = qa.id
+            LEFT JOIN clinical_applications ca ON re."clinicalApplicationsId" = ca.id
+            ORDER BY re."publicationDate" DESC;
             """
         else:
-            query = "SELECT * FROM research_entries ORDER BY publication_date DESC;"
+            query = """SELECT id, title, authors::text, journal, "publicationDate"::text, doi, "studyType", "evidenceLevel", "sampleSize"::text FROM research_entries ORDER BY "publicationDate" DESC;"""
         
-        return self.query_raw(query)
+        raw_data = self.query_raw(query)
+        
+        # Convert the generic column data to proper field names
+        if include_relations:
+            column_names = [
+                'id', 'title', 'authors', 'journal', 'publicationDate', 'doi', 'studyType', 'evidenceLevel', 'sampleSize',
+                'ageRange', 'gender', 'occupation', 'adhdSubtype', 'design', 'duration',
+                'primaryResults', 'clinicalSignificance', 'productivityImpact', 'careerImplications',
+                'riskOfBias', 'gradeRating', 'diagnosticUtility'
+            ]
+        else:
+            column_names = ['id', 'title', 'authors', 'journal', 'publicationDate', 'doi', 'studyType', 'evidenceLevel', 'sampleSize']
+        
+        result = []
+        for row in raw_data:
+            if 'col_0' in row:  # Generic column names
+                new_row = {}
+                for i, col_name in enumerate(column_names):
+                    col_key = f'col_{i}'
+                    if col_key in row:
+                        # Handle special cases
+                        if col_name == 'authors' and row[col_key]:
+                            # Convert PostgreSQL array string back to list
+                            authors_str = row[col_key].strip('{}')
+                            if authors_str:
+                                new_row[col_name] = [a.strip('\"\'') for a in authors_str.split(',')]
+                            else:
+                                new_row[col_name] = []
+                        elif col_name in ['sample_size'] and row[col_key]:
+                            try:
+                                new_row[col_name] = int(row[col_key])
+                            except:
+                                new_row[col_name] = row[col_key]
+                        else:
+                            new_row[col_name] = row[col_key]
+                result.append(new_row)
+            else:
+                result.append(row)
+        
+        return result
     
     def find_many_treatment_recommendations(self) -> List[Dict[str, Any]]:
         """Get all treatment recommendations"""

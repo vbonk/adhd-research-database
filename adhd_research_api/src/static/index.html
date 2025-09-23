@@ -332,21 +332,21 @@
             }
             
             const html = data.map(item => {
-                const evidenceClass = item.evidence_level ? item.evidence_level.toLowerCase().replace('_', '-') : '';
+                const evidenceClass = item.evidenceLevel ? item.evidenceLevel.toLowerCase().replace('_', '-') : '';
                 const authors = Array.isArray(item.authors) ? item.authors.join(', ') : item.authors || '';
                 
                 return `
                     <div class="research-item">
                         <div class="research-title">${item.title || 'Untitled'}</div>
                         <div class="research-meta">
-                            <span class="evidence-badge ${evidenceClass}">${item.evidence_level || 'N/A'}</span>
+                            <span class="evidence-badge ${evidenceClass}">${item.evidenceLevel || 'N/A'}</span>
                             <strong>Authors:</strong> ${authors}<br>
                             <strong>Journal:</strong> ${item.journal || 'N/A'} | 
-                            <strong>Study Type:</strong> ${item.study_type || 'N/A'} | 
-                            <strong>Sample Size:</strong> ${item.sample_size || 'N/A'}
+                            <strong>Study Type:</strong> ${item.studyType || 'N/A'} | 
+                            <strong>Sample Size:</strong> ${item.sampleSize || 'N/A'}
                         </div>
                         <div class="research-summary">
-                            ${item.primary_results || item.clinical_significance || 'No summary available.'}
+                            ${item.primaryResults || item.clinicalSignificance || 'No summary available.'}
                         </div>
                     </div>
                 `;
