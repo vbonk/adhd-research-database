@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SentimentRecord",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "platform",
+    "query",
+    "time_window",
+    "n_items_analyzed",
+    "engagement_filters",
+    "themes",
+    "alignment_with_evidence",
+    "evidence_alignment_score",
+    "quality_controls",
+    "tos_compliance",
+    "pii_controls",
+    "notes",
+    "linked_knowledge_ids"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "pattern": "^SENT-\\d{6}$"
+    },
+    "platform": {
+      "type": "string",
+      "enum": [
+        "Reddit",
+        "X",
+        "YouTube",
+        "Forum"
+      ]
+    },
+    "query": {
+      "type": "string"
+    },
+    "time_window": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{4}$"
+    },
+    "n_items_analyzed": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "engagement_filters": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "min_likes",
+        "min_comments"
+      ],
+      "properties": {
+        "min_likes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "min_comments": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "themes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "label",
+          "frequency",
+          "quotes"
+        ],
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "frequency": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "quotes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "alignment_with_evidence": {
+      "type": "string",
+      "enum": [
+        "Supportive",
+        "Mixed",
+        "Conflicting"
+      ]
+    },
+    "evidence_alignment_score": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10
+    },
+    "quality_controls": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "de-duplication",
+          "bot-filter",
+          "NSFW exclusion"
+        ]
+      }
+    },
+    "tos_compliance": {
+      "type": "boolean"
+    },
+    "pii_controls": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "redaction",
+          "aggregation"
+        ]
+      }
+    },
+    "notes": {
+      "type": "string"
+    },
+    "linked_knowledge_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^ADD-[A-Za-z]+-\\d{6}$"
+      }
+    }
+  }
+}

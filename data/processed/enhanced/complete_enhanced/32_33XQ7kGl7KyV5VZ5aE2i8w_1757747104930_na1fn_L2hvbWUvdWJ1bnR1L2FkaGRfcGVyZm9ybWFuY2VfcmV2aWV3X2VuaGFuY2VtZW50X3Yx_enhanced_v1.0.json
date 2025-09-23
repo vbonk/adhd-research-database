@@ -1,0 +1,298 @@
+{
+  "tier1_essential_enhancement": {
+    "actionable_implementation": [
+      {
+        "step": "Implement a Digital Achievement Journal (e.g., Notion, Evernote, OneNote) with a 'Work Wins' section.",
+        "protocol": "Review weekly to document accomplishments. Cost: Free to $10/month for premium features. Time: 15-30 minutes weekly. ROI: Improved self-assessment for reviews within 1-3 months."
+      },
+      {
+        "step": "Create an Email Folder System labeled 'Performance Review'.",
+        "protocol": "Email yourself accomplishments as they happen. Set calendar reminders to check before reviews. Cost: Free. Time: 5 minutes daily/as needed. ROI: Comprehensive documentation for reviews within 1-3 months."
+      },
+      {
+        "step": "Maintain a Visual Documentation board (digital or physical).",
+        "protocol": "Document project milestones, positive feedback screenshots, and deliverables. Cost: Free to $20/month for digital tools (e.g., Miro). Time: 10-20 minutes weekly. ROI: Visual aid for recall and discussion within 1-3 months."
+      },
+      {
+        "step": "Utilize a Voice Memo Archive for documenting achievements.",
+        "protocol": "Verbally document achievements immediately after they occur. Cost: Free (most smartphones). Time: 2-5 minutes daily/as needed. ROI: Low-friction documentation for reviews within 1-3 months."
+      },
+      {
+        "step": "Organize collected documentation into company performance metrics categories four weeks before review.",
+        "protocol": "Align achievements with technical skills, communication, project management, etc. Cost: Free. Time: 1-2 hours (one-time). ROI: Structured review preparation within 1 month."
+      },
+      {
+        "step": "Apply the STAR-Q framework (Situation, Task, Action, Result, Quantification) to each achievement.",
+        "protocol": "Quantify impact (time saved, revenue generated, customer satisfaction). Cost: Free. Time: 30-60 minutes per achievement. ROI: Concrete, persuasive examples for review within 1 month."
+      },
+      {
+        "step": "Schedule Micro-Feedback Sessions with 3-5 key collaborators.",
+        "protocol": "Conduct 15-minute conversations to gather specific examples of contributions and areas for development. Cost: Free. Time: 1-2 hours (one-time). ROI: Valuable external perspective within 1 month."
+      },
+      {
+        "step": "Send Structured Email Requests for feedback to colleagues.",
+        "protocol": "Ask specific questions about contributions and development areas. Cost: Free. Time: 30-60 minutes (one-time). ROI: Written feedback for review within 1 month."
+      },
+      {
+        "step": "Set Regular Reflection Meetings with your manager for informal feedback.",
+        "protocol": "Schedule recurring appointments throughout the year. Cost: Free. Time: 15-30 minutes monthly. ROI: Continuous feedback and course correction throughout the year."
+      },
+      {
+        "step": "Create a visual timeline of work over the review period.",
+        "protocol": "Use digital tools (Lucidchart, Miro) or physical methods (whiteboard). Mark key projects and milestones. Cost: Free to $10/month. Time: 1-2 hours (one-time). ROI: Overcomes recency bias and provides comprehensive view within 1 month."
+      },
+      {
+        "step": "Develop a coherent narrative using the ADHD-Friendly Narrative Framework.",
+        "protocol": "Structure around Starting Point, Growth Journey, Impact Story, and Forward Vision, with evidence. Cost: Free. Time: 2-4 hours (one-time). ROI: Memorable and persuasive self-assessment within 1 month."
+      },
+      {
+        "step": "Prepare a 'Growth Areas Pre-Analysis' document.",
+        "protocol": "Proactively identify improvement areas, document steps taken, prepare questions, and draft development plans. Cost: Free. Time: 1-2 hours (one-time). ROI: Minimizes emotional reactivity during review within 1 month."
+      },
+      {
+        "step": "Create a Review Meeting Accommodation Plan.",
+        "protocol": "Request review questions in advance, bring notes, schedule for optimal focus time, ask for breaks, request verbal and written feedback. Cost: Free. Time: 30-60 minutes (one-time). ROI: Optimal performance during review within 1 month."
+      },
+      {
+        "step": "Implement Active Listening Techniques during feedback sessions.",
+        "protocol": "Take notes, summarize, ask clarifying questions, use body language, request specific examples. Cost: Free. Time: Ongoing. ROI: Improved focus and understanding during feedback."
+      },
+      {
+        "step": "Utilize the PAUSE method for navigating constructive criticism.",
+        "protocol": "Pause, Acknowledge, Understand, Summarize, Explore next steps. Cost: Free. Time: Ongoing. ROI: Manages emotional responses and reduces defensive reactions."
+      },
+      {
+        "step": "Frame discussions around solutions and growth opportunities.",
+        "protocol": "Instead of 'I get distracted,' try 'I work best with milestone check-ins.' Cost: Free. Time: Ongoing. ROI: Shifts conversation from problems to collaborative solutions."
+      },
+      {
+        "step": "Transform feedback into a concrete visual action plan immediately after review.",
+        "protocol": "Use Kanban board, mind map, or timeline for 'To Learn,' 'In Progress,' 'Mastered.' Cost: Free to $10/month. Time: 1-2 hours (one-time). ROI: Clear, ADHD-friendly action plan within 1 week post-review."
+      },
+      {
+        "step": "Implement Accountability Systems for long-term goals.",
+        "protocol": "Schedule regular check-ins with manager, find accountability partner, use visual trackers, set calendar reminders, consider ADHD coach. Cost: Free to $200+/hour for coaching. Time: Ongoing. ROI: Sustained progress on development goals."
+      },
+      {
+        "step": "Develop a Continuous Documentation Habit.",
+        "protocol": "'Friday Wins' ritual (15 mins weekly), Monthly Achievement Review, maintain a digital 'brag folder.' Cost: Free. Time: 15-30 minutes weekly/monthly. ROI: Sustainable documentation for future reviews."
+      },
+      {
+        "step": "If disclosed, discuss specific accommodations during performance reviews.",
+        "protocol": "Focus on work outcomes, connect accommodations to performance metrics, come with research/examples. Example: '90-minute focused sessions improved code quality by 27%.' Cost: Free. Time: 30-60 minutes (one-time). ROI: Formalized accommodations for improved performance."
+      },
+      {
+        "step": "If not disclosed, advocate for productivity-supporting working conditions.",
+        "protocol": "Frame requests around personal productivity (e.g., 'dedicated focus time in mornings'). Cost: Free. Time: 30-60 minutes (one-time). ROI: Improved working conditions without disclosure."
+      },
+      {
+        "step": "Develop strategies to manage Rejection Sensitive Dysphoria (RSD).".",
+        "protocol": "Prepare self-supportive statements, create post-review self-care plan, develop 'feedback processing' document, practice cognitive reframing. Cost: Free. Time: Ongoing. ROI: Reduced emotional reactivity to feedback."
+      }
+    ],
+    "professional_context": {
+      "career_stages": [
+        "Entry-level (0-2 years experience)",
+        "Mid-career (3-10 years experience)",
+        "Senior/Leadership (10+ years experience)"
+      ],
+      "industry_relevance": [
+        "Technology (Software Development, IT, Data Science)",
+        "Finance (Analysts, Traders, Accountants)",
+        "Healthcare (Doctors, Nurses, Administrators)",
+        "Consulting (Management, IT, Strategy)",
+        "Creative Industries (Marketing, Design, Content Creation)",
+        "Education (Teachers, Researchers, Administrators)"
+      ],
+      "role_types": [
+        "Individual Contributor (requiring deep focus, problem-solving)",
+        "Project Manager (requiring organization, communication, timeline management)",
+        "Team Lead/Manager (requiring delegation, feedback, strategic thinking)",
+        "Sales/Client-Facing (requiring interpersonal skills, quick thinking, resilience)"
+      ]
+    },
+    "cost_analysis": {
+      "financial_investment": "Generally low, ranging from free (using existing tools/apps) to $20/month for premium note-taking/project management software (e.g., Notion, Miro). ADHD coaching can range from $100-$300+ per hour, with packages often starting at $1000+ for several months.",
+      "time_investment": "Initial setup: 2-4 hours for documentation systems and narrative planning. Ongoing: 15-30 minutes daily/weekly for documentation, 1-2 hours monthly for review preparation, 1-2 hours for feedback collection. Review meeting itself: 30-90 minutes.",
+      "roi_timeline": "Short-term (1-3 months): Improved confidence, more structured review conversations, better self-assessment. Medium-term (3-6 months): More positive performance reviews, clearer development plans, enhanced manager perception. Long-term (6-12+ months): Career progression, increased job satisfaction, reduced anxiety around evaluations."
+    },
+    "success_indicators": {
+      "short_term": [
+        "Increased confidence in preparing for and participating in performance reviews (self-reported)",
+        "Completion of documentation system setup and consistent weekly usage (tracking tool usage metrics)",
+        "Successful collection of peer feedback (number of responses received)",
+        "Reduced anxiety levels before and during performance reviews (self-reported, qualitative feedback)"
+      ],
+      "medium_term": [
+        "More positive performance review outcomes (manager feedback, formal review scores)",
+        "Clearer, more actionable development plans established post-review (review document analysis)",
+        "Improved manager perception of proactivity and self-awareness (manager feedback, 360-degree reviews)",
+        "Successful implementation of at least one requested accommodation or productivity-supporting working condition (tracking implementation)"
+      ],
+      "long_term": [
+        "Demonstrated career progression (promotions, increased responsibilities, salary increases)",
+        "Sustained reduction in performance-related stress and burnout (qualitative feedback, well-being surveys)",
+        "Enhanced ability to self-advocate effectively in various professional situations (qualitative feedback, observed behavior)",
+        "Increased job satisfaction and engagement (employee engagement surveys)"
+      ]
+    }
+  },
+  "tier2_strategic_enhancement": {
+    "personalization_targeting": {
+      "adhd_subtypes": {
+        "predominantly_inattentive": "Focus on strategies for sustained attention, organization, and memory. Emphasize digital achievement journals, visual timelines, and structured feedback requests. Accommodations might include written instructions, quiet workspaces, and extended deadlines for complex tasks.",
+        "predominantly_hyperactive_impulsive": "Focus on strategies for managing impulsivity, restlessness, and emotional regulation. Emphasize the PAUSE method for feedback, structured breaks, and physical outlets. Accommodations might include opportunities for movement, flexible scheduling, and clear behavioral expectations.",
+        "combined_presentation": "Integrate strategies from both inattentive and hyperactive-impulsive subtypes. Prioritize comprehensive documentation, structured communication, and emotional regulation techniques. Accommodations should be a blend of environmental adjustments and process modifications."
+      },
+      "severity_levels": {
+        "mild": "Reinforce existing coping mechanisms and introduce new strategies gradually. Focus on self-monitoring and proactive documentation. Minimal external support may be needed.",
+        "moderate": "Systematic implementation of all recommended strategies is crucial. Regular check-ins with managers or mentors, and consideration of ADHD coaching, are highly beneficial. Emphasis on building robust external scaffolding.",
+        "severe": "Requires significant external support, potentially including professional ADHD coaching, therapy, and formal workplace accommodations. Focus on building a strong support network and advocating for necessary environmental and procedural adjustments."
+      },
+      "comorbidities": {
+        "anxiety": "Integrate stress-reduction techniques (e.g., mindfulness, deep breathing) before and during reviews. Emphasize proactive preparation to reduce uncertainty. Focus on managing Rejection Sensitive Dysphoria (RSD) with specific coping strategies.",
+        "depression": "Prioritize energy management and breaking down tasks into smaller, manageable steps. Focus on celebrating small wins to combat feelings of inadequacy. Ensure accountability systems are supportive and not punitive.",
+        "learning_disabilities": "Tailor documentation and communication methods to leverage strengths and bypass weaknesses. For example, if written expression is challenging, prioritize voice memos or visual documentation. Accommodations might include assistive technology or alternative formats for feedback."
+      }
+    },
+    "barriers_solutions": {
+      "working_memory_limitations": {
+        "barrier": "Difficulty recalling specific accomplishments and contributions throughout the review period when put on the spot.",
+        "solution": "Implement a consistent, low-friction documentation system (digital journal, email folder, voice memos) to capture achievements as they happen. Utilize the STAR-Q method for structured recall."
+      },
+      "time_blindness": {
+        "barrier": "Challenges in accurately tracking progress over extended periods, potentially leading to recency bias in self-assessments.",
+        "solution": "Create a visual timeline of work over the review period using tools like Lucidchart or Miro. Schedule regular \'Friday Wins\' rituals and monthly achievement reviews to combat time distortion."
+      },
+      "rejection_sensitive_dysphoria": {
+        "barrier": "Heightened emotional response to constructive criticism that may feel disproportionately negative or personal.",
+        "solution": "Prepare a \'Growth Areas Pre-Analysis\' document to proactively identify areas for improvement. Utilize the PAUSE method during feedback. Develop a post-review self-care plan and practice cognitive reframing."
+      },
+      "executive_function_variations": {
+        "barrier": "Difficulty organizing documentation, preparing materials, or following through on review-related tasks without structured support.",
+        "solution": "Break down review preparation into smaller, manageable steps. Use checklists and templates for organizing information. Implement accountability systems with managers or partners."
+      },
+      "inconsistent_performance": {
+        "barrier": "Potential performance variability based on interest, urgency, and stimulation levels throughout the review period.",
+        "solution": "Focus on solutions-oriented communication with managers, framing requests around optimal working conditions (e.g., \'dedicated focus time\'). Document periods of high performance with quantifiable results."
+      }
+    },
+    "integration_guidance": {
+      "with_medication_management": "These strategies complement medication by providing external structure and behavioral tools that address executive function deficits not fully mitigated by pharmacology. Consistent documentation can also help track medication effectiveness on workplace performance.",
+      "with_adhd_coaching": "ADHD coaches can provide personalized support in implementing these strategies, offering accountability, refining documentation systems, and practicing self-advocacy scripts. Coaching can accelerate the adoption and effectiveness of these interventions.",
+      "with_therapy_cbt": "Cognitive Behavioral Therapy (CBT) can enhance the emotional regulation aspects of these strategies, particularly for managing Rejection Sensitive Dysphoria and anxiety around performance reviews. Therapy can help reframe negative thought patterns associated with feedback.",
+      "with_workplace_accommodations": "These strategies provide a framework for identifying and advocating for formal accommodations. Proactive documentation and clear communication (e.g., using the solutions-oriented approach) make the case for accommodations more compelling and easier for employers to implement."
+    }
+  },
+  "tier3_future_enhancement": {
+    "ai_personalization_support": {
+      "algorithm_inputs": [
+        "User-reported ADHD subtype and severity",
+        "Comorbidities (anxiety, depression, learning disabilities)",
+        "Industry and role type",
+        "Past performance review outcomes and feedback patterns",
+        "Preferred learning/documentation styles (visual, auditory, kinesthetic)",
+        "Engagement with specific strategies (e.g., frequency of journal use, feedback requests)"
+      ],
+      "recommendation_weights": {
+        "adhd_subtype_match": "High",
+        "comorbidity_management": "High",
+        "industry_role_relevance": "Medium",
+        "past_strategy_effectiveness": "High",
+        "user_preference_alignment": "Medium"
+      }
+    },
+    "social_features": {
+      "community_validation": "Platform for users to share successful implementation stories, rate strategy effectiveness, and provide peer support. Moderated forums for discussing challenges and solutions.",
+      "expert_commentary": "Integration of insights and tips from ADHD coaches, therapists, and workplace psychologists. Q&A sessions or webinars with experts on specific performance review challenges."
+    },
+    "advanced_accessibility": {
+      "learning_styles": [
+        "Visual: Interactive infographics, video demonstrations, mind-mapping tools for strategy visualization.",
+        "Auditory: Audio summaries of key strategies, guided meditation for RSD, voice memo integration for documentation.",
+        "Kinesthetic: Interactive checklists, gamified progress trackers, role-playing scenarios for self-advocacy practice."
+      ],
+      "cognitive_accommodations": [
+        "Text-to-speech and speech-to-text options for all content.",
+        "Customizable font sizes, color contrasts, and reading modes.",
+        "Simplified language options and glossaries for complex terms.",
+        "Focus modes to minimize distractions during content consumption."
+      ]
+    }
+  },
+  "content_creation_framework": {
+    "editorial_narrative": {
+      "compelling_headlines": [
+        "Unlocking Your Potential: ADHD & Performance Reviews for Career Growth",
+        "Beyond the Report Card: Mastering Performance Reviews with ADHD",
+        "ADHD at Work: Transform Performance Reviews from Dread to Development",
+        "The ADHD Professional's Edge: Self-Advocacy in Performance Evaluations"
+      ],
+      "hooks": [
+        "Do performance reviews fill you with dread? You're not alone. For professionals with ADHD, these evaluations can feel like navigating a minefield.",
+        "Imagine turning your annual performance review into a powerful catalyst for career advancement, not anxiety. It's possible, even with ADHD.",
+        "Many talented ADHD professionals struggle to showcase their true value during reviews. Discover how to change that narrative."
+      ],
+      "story_angles": [
+        "The Underestimated Professional: How ADHDers can leverage reviews to highlight unique strengths.",
+        "From Struggle to Strategy: A personal journey of mastering performance reviews with ADHD.",
+        "The Manager's Guide: How to effectively evaluate and support ADHD employees during reviews."
+      ],
+      "emotional_triggers": [
+        "Fear of being misunderstood or judged.",
+        "Frustration over past negative review experiences.",
+        "Hope for career progression and recognition.",
+        "Desire for fair evaluation and workplace support."
+      ]
+    },
+    "source_material": [
+      "Primary research citations on ADHD in the workplace, executive function, and performance management (e.g., Barkley, Russell A. 'Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment.' Guilford Press; various editions. [DOI/PMID where applicable])",
+      "Expert quotes from ADHD coaches, HR professionals specializing in neurodiversity, and organizational psychologists.",
+      "Case studies of successful self-advocacy and accommodation requests in performance review contexts.",
+      "Data on ADHD employment rates, career progression, and impact on performance evaluations."
+    ],
+    "visual_content": [
+      "Infographic: 'The ADHD Performance Review Cycle: From Preparation to Progression' (illustrating key steps and timelines).",
+      "Process Flow: 'STAR-Q Method for Documenting Achievements' (step-by-step visual guide).",
+      "Comparison Chart: 'ADHD Subtypes & Tailored Review Strategies' (mapping strategies to inattentive, hyperactive-impulsive, combined).",
+      "Diagram: 'Workplace Accommodations for ADHD: A Decision Tree' (guiding through disclosure and request process)."
+    ],
+    "multimedia_resources": [
+      "Video Content: Short animated explainer videos on 'What is RSD?' or 'How to Self-Advocate Effectively'.",
+      "Demonstrations: Screen-share tutorials on setting up a 'Work Wins' journal in Notion or OneNote.",
+      "Interactive Tools: Online quiz to identify personalized review preparation strategies based on ADHD profile. Interactive template for drafting accommodation requests."
+    ],
+    "content_formats": {
+      "blog_post_structure": {
+        "title": "The ADHD Professional's Guide to Acing Performance Reviews",
+        "sections": [
+          "Introduction: The Unique Challenges of ADHD in Performance Reviews",
+          "Part 1: Pre-Review Preparation (4-6 Weeks Before) - Documentation, Feedback, Narrative",
+          "Part 2: During the Review Meeting - Accommodations, Listening, Navigating Criticism",
+          "Part 3: Post-Review Action Planning - Visual Plans, Accountability, Continuous Documentation",
+          "Special Considerations: Disclosure, Self-Advocacy, and RSD Management",
+          "Conclusion: Turning Reviews into Launchpads for Career Growth"
+        ]
+      },
+      "social_media_content": [
+        "LinkedIn Carousel: '5 Must-Do's Before Your Next Performance Review (ADHD Edition)'.",
+        "Twitter Thread: 'ADHD & Performance Reviews: Debunking Myths & Sharing Strategies'.",
+        "Instagram Infographic: 'Quick Tips for Managing RSD During Feedback'."
+      ],
+      "ebook_chapter_specs": {
+        "chapter_title": "Performance Reviews: A Strategic Advantage for the ADHD Professional",
+        "sub_sections": [
+          "Deep Dive: Executive Function & Performance Review Impact",
+          "Advanced Documentation Techniques & Tools",
+          "Mastering the Feedback Loop: From Reception to Action",
+          "Tailoring Strategies for Your ADHD Profile (Subtype, Severity, Comorbidities)",
+          "The Art of Professional Self-Advocacy: Scripts & Scenarios",
+          "Leveraging Technology & AI for Review Success"
+        ],
+        "length": "3000-5000 words",
+        "tone": "Empowering, authoritative, practical"
+      }
+    }
+  }
+}
+

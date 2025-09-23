@@ -1,0 +1,102 @@
+{
+  "total_entries": 303,
+  "assessment_entries": 44,
+  "workplace_entries": 125,
+  "treatment_entries": 189,
+  "assessment_sample": [
+    {
+      "id": "ADD-Workplace-001",
+      "domain": "Workplace & Career Impact",
+      "subtopic": "Executive Dysfunction and Time Management",
+      "knowledge_point": "Adult males (25-65, professional) with attention-deficit/hyperactivity disorder (ADHD) frequently experience significant executive function deficits, ..."
+    },
+    {
+      "id": "ADD-Assessment-DIVA",
+      "domain": "Adult Male ADD Identification & Assessment",
+      "subtopic": "Assessment tools for adult ADHD (DIVA)",
+      "knowledge_point": "The Diagnostic Interview for ADHD in Adults (DIVA) is a semi-structured diagnostic interview, validated for high diagnostic accuracy, sensitivity, and..."
+    },
+    {
+      "id": "ADD-DifferentialDiagnosis-AdultMale-001",
+      "domain": "Adult ADHD",
+      "subtopic": "Differential Diagnosis",
+      "knowledge_point": "Differential diagnosis of adult ADHD in professional males (25-65) involves distinguishing it from various psychiatric comorbidities and medical condi..."
+    },
+    {
+      "id": "ADD-Trauma-001",
+      "domain": "Adult Male ADD Identification & Assessment",
+      "subtopic": "Trauma and ADHD symptom overlap",
+      "knowledge_point": "Adults with ADHD have an increased risk of developing PTSD, with comorbidity prevalence ranging from 28% to 36%...."
+    },
+    {
+      "id": "ADD-Pharmacogenetics-001",
+      "domain": "Pharmacogenetics",
+      "subtopic": "ADHD Treatment Response",
+      "knowledge_point": "Pharmacogenetic testing for adult ADHD is not yet routinely recommended due to limited research, but may offer insights into drug metabolism and effic..."
+    }
+  ],
+  "workplace_sample": [
+    {
+      "id": "ADD-Workplace-001",
+      "domain": "Workplace & Career Impact",
+      "subtopic": "Executive Dysfunction and Time Management",
+      "knowledge_point": "Adult males (25-65, professional) with attention-deficit/hyperactivity disorder (ADHD) frequently experience significant executive function deficits, ..."
+    },
+    {
+      "id": "ADD-Workplace-ExecutiveFunction-001",
+      "domain": "Workplace & Career Impact",
+      "subtopic": "Executive Function",
+      "knowledge_point": "Adults with ADHD often face significant deficits in executive function, which can lead to adverse work-related outcomes, including difficulties with t..."
+    },
+    {
+      "id": "ADD-WorkplaceCareerImpact-001",
+      "domain": "Workplace & Career Impact",
+      "subtopic": "Entrepreneurship",
+      "knowledge_point": "Hyperactivity symptoms in adult males with ADHD are positively associated with self-employment, suggesting a potential entrepreneurial advantage...."
+    },
+    {
+      "id": "ADD-WorkplaceCareerImpact-001",
+      "domain": "Workplace & Career Impact",
+      "subtopic": "Leadership",
+      "knowledge_point": "Adults with ADHD may thrive in manual and creative roles, and hyperactivity can benefit self-employment...."
+    },
+    {
+      "id": "ADD-WorkplaceImpact-001",
+      "domain": "Workplace & Career Impact",
+      "subtopic": "Hyperfocus in Professional Settings",
+      "knowledge_point": "Adults with ADHD can experience hyperfocus, an intense and prolonged focus on tasks of interest, which can be a significant asset in the workplace, le..."
+    }
+  ],
+  "treatment_sample": [
+    {
+      "id": "ADD-Workplace-001",
+      "domain": "Workplace & Career Impact",
+      "subtopic": "Executive Dysfunction and Time Management",
+      "knowledge_point": "Adult males (25-65, professional) with attention-deficit/hyperactivity disorder (ADHD) frequently experience significant executive function deficits, ..."
+    },
+    {
+      "id": "ADD-Workplace-ExecutiveFunction-001",
+      "domain": "Workplace & Career Impact",
+      "subtopic": "Executive Function",
+      "knowledge_point": "Adults with ADHD often face significant deficits in executive function, which can lead to adverse work-related outcomes, including difficulties with t..."
+    },
+    {
+      "id": "ADD-TREATMENT-STIMULANTS-001",
+      "domain": "Evidence-Based Treatments",
+      "subtopic": "Stimulant Medication Effectiveness",
+      "knowledge_point": "Amphetamines are more effective than placebo for treating ADHD in adults, with a standard mean difference (SMD) of -0.79...."
+    },
+    {
+      "id": "ADD-EvidenceBasedTreatments-001",
+      "domain": "Evidence-Based Treatments",
+      "subtopic": "Non-stimulant medication",
+      "knowledge_point": "Atomoxetine, guanfacine, and viloxazine ER are more efficacious than placebo for adult ADHD, but with lower tolerability...."
+    },
+    {
+      "id": "ADD-Mindfulness-Lee2017",
+      "domain": "Mindfulness-based interventions for adult ADHD",
+      "subtopic": "Effectiveness in adult males (25-65, professional)",
+      "knowledge_point": "Mindfulness-based interventions (MBCT, MAP, MBSR) show promising results in improving attention and reducing inattention symptoms in adults with ADHD...."
+    }
+  ]
+}

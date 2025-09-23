@@ -1,0 +1,343 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "KnowledgeEntry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "knowledge_id",
+    "domain",
+    "subtopic",
+    "knowledge_point",
+    "population",
+    "study_design",
+    "evidence_level",
+    "effect_size",
+    "sample_size",
+    "risk_of_bias",
+    "certainty_grade",
+    "heterogeneity",
+    "publication_bias",
+    "outcomes",
+    "limitations",
+    "funding_conflicts",
+    "ontology_codes",
+    "citations",
+    "keywords",
+    "actionable_insights",
+    "confidence_components",
+    "confidence_score",
+    "social_sentiment",
+    "last_updated"
+  ],
+  "properties": {
+    "knowledge_id": {
+      "type": "string",
+      "pattern": "^ADD-[A-Za-z]+-\\d{6}$"
+    },
+    "domain": {
+      "type": "string",
+      "enum": [
+        "Foundational",
+        "Biology",
+        "Clinical",
+        "Comorbidities",
+        "Treatments",
+        "Management",
+        "Social",
+        "Economics"
+      ]
+    },
+    "subtopic": {
+      "type": "string"
+    },
+    "knowledge_point": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "population": {
+      "type": "string"
+    },
+    "study_design": {
+      "type": "string",
+      "enum": [
+        "SR/MA",
+        "RCT",
+        "Cohort",
+        "Case-control",
+        "Cross-sectional",
+        "Guideline",
+        "Expert"
+      ]
+    },
+    "evidence_level": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "effect_size": {
+      "type": "string"
+    },
+    "sample_size": {
+      "type": "string"
+    },
+    "risk_of_bias": {
+      "type": "string",
+      "enum": [
+        "Low",
+        "Some",
+        "High"
+      ]
+    },
+    "risk_of_bias_tool": {
+      "type": "string",
+      "enum": [
+        "ROB-2",
+        "ROBINS-I",
+        "AMSTAR-2",
+        "QUIPS"
+      ]
+    },
+    "certainty_grade": {
+      "type": "string",
+      "enum": [
+        "High",
+        "Moderate",
+        "Low",
+        "Very Low (GRADE)"
+      ]
+    },
+    "heterogeneity": {
+      "type": "object",
+      "required": [
+        "I2",
+        "tau2"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "I2": {
+          "type": "number",
+          "minimum": 0
+        },
+        "tau2": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    },
+    "publication_bias": {
+      "type": "object",
+      "required": [
+        "method",
+        "result"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "method": {
+          "type": "string",
+          "enum": [
+            "Egger",
+            "Trim-and-fill",
+            "NA"
+          ]
+        },
+        "result": {
+          "type": "string"
+        }
+      }
+    },
+    "outcomes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "limitations": {
+      "type": "string"
+    },
+    "funding_conflicts": {
+      "type": "string"
+    },
+    "ontology_codes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "system"
+        ],
+        "properties": {
+          "system": {
+            "type": "string",
+            "enum": [
+              "MeSH",
+              "SNOMED",
+              "UMLS",
+              "ICD-11",
+              "DSM-5-TR"
+            ]
+          },
+          "code": {
+            "type": "string"
+          },
+          "cui": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "citations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "type",
+          "value"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "DOI",
+              "PMID",
+              "URL"
+            ]
+          },
+          "value": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "actionable_insights": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "confidence_components": {
+      "type": "object",
+      "required": [
+        "evidence_level",
+        "sample_size",
+        "recency_score",
+        "risk_of_bias",
+        "replication",
+        "heterogeneity_penalty"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "evidence_level": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "sample_size": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "recency_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "risk_of_bias": {
+          "type": "string",
+          "enum": [
+            "Low",
+            "Some",
+            "High"
+          ]
+        },
+        "replication": {
+          "type": "string",
+          "enum": [
+            "Yes",
+            "No",
+            "Partial"
+          ]
+        },
+        "heterogeneity_penalty": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "confidence_score": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10
+    },
+    "social_sentiment": {
+      "type": "string",
+      "enum": [
+        "Supportive",
+        "Mixed",
+        "Conflicting",
+        "Unknown"
+      ]
+    },
+    "conflict_note": {
+      "type": "string"
+    },
+    "preregistration": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "registry",
+        "id"
+      ],
+      "properties": {
+        "registry": {
+          "type": "string",
+          "enum": [
+            "PROSPERO",
+            "OSF",
+            "NA"
+          ]
+        },
+        "id": {
+          "type": "string"
+        }
+      }
+    },
+    "source_language": {
+      "type": "string"
+    },
+    "translation_method": {
+      "type": "string",
+      "enum": [
+        "human",
+        "machine",
+        "hybrid",
+        "NA"
+      ]
+    },
+    "related_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "data_license": {
+      "type": "string",
+      "enum": [
+        "CC-BY",
+        "CC0",
+        "All-rights-reserved",
+        "NA"
+      ]
+    },
+    "last_updated": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    }
+  }
+}

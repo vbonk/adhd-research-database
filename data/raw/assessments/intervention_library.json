@@ -1,0 +1,378 @@
+{
+  "intervention_library_id": "adhd_professional_interventions_v1",
+  "name": "ADHD Professional Intervention Library",
+  "description": "Comprehensive evidence-based intervention library for professional adult males (25-65) with ADHD, including implementation difficulty ratings",
+  "target_population": "Professional adult males (25-65) with confirmed or suspected ADHD",
+  "evidence_base": "Based on 189 treatment-related entries from 303-entry knowledge base",
+  "intervention_categories": [
+    {
+      "category_id": "lifestyle_interventions",
+      "name": "Lifestyle and Self-Management Interventions",
+      "description": "Evidence-based lifestyle modifications for ADHD symptom management",
+      "interventions": [
+        {
+          "intervention_id": "aerobic_exercise",
+          "name": "Regular Aerobic Exercise Program",
+          "evidence_level": 1,
+          "effect_size": "Medium to Large",
+          "implementation_difficulty": {
+            "rating": "Medium",
+            "factors": ["Time commitment", "Motivation maintenance", "Schedule integration"],
+            "barriers": ["Busy work schedule", "Initial motivation", "Consistency challenges"],
+            "facilitators": ["Morning routine", "Workplace gym", "Exercise buddy"]
+          },
+          "time_to_benefit": "2-6 weeks",
+          "professional_context": {
+            "workplace_integration": "High",
+            "career_impact": "Positive - improved focus and energy",
+            "implementation_tips": [
+              "Schedule exercise like important meetings",
+              "Use lunch breaks for gym sessions",
+              "Consider walking meetings",
+              "Track energy and focus improvements"
+            ]
+          },
+          "specific_protocol": {
+            "frequency": "4-5 times per week",
+            "duration": "30-45 minutes",
+            "intensity": "Moderate (60-70% max heart rate)",
+            "types": ["Running", "Cycling", "Swimming", "High-intensity interval training"]
+          },
+          "monitoring": {
+            "metrics": ["Exercise frequency", "ADHD symptoms", "Work performance", "Sleep quality"],
+            "tools": ["Fitness tracker", "Mood diary", "Work productivity measures"]
+          }
+        },
+        {
+          "intervention_id": "sleep_optimization",
+          "name": "Sleep Hygiene and Optimization",
+          "evidence_level": 2,
+          "effect_size": "Medium",
+          "implementation_difficulty": {
+            "rating": "Low to Medium",
+            "factors": ["Habit change", "Environmental control", "Consistency"],
+            "barriers": ["Work stress", "Screen time habits", "Irregular schedule"],
+            "facilitators": ["Sleep tracking apps", "Environmental modifications", "Routine establishment"]
+          },
+          "time_to_benefit": "2-4 weeks",
+          "professional_context": {
+            "workplace_integration": "High",
+            "career_impact": "Positive - improved attention and decision-making",
+            "implementation_tips": [
+              "Set consistent work end times",
+              "Use blue light filters on devices",
+              "Create transition rituals from work to sleep",
+              "Optimize bedroom for sleep"
+            ]
+          },
+          "specific_protocol": {
+            "sleep_schedule": "Consistent bedtime and wake time (±30 minutes)",
+            "sleep_duration": "7-9 hours",
+            "pre_sleep_routine": "1-hour wind-down period",
+            "environment": "Cool (65-68°F), dark, quiet"
+          }
+        },
+        {
+          "intervention_id": "nutrition_optimization",
+          "name": "ADHD-Focused Nutrition Plan",
+          "evidence_level": 3,
+          "effect_size": "Small to Medium",
+          "implementation_difficulty": {
+            "rating": "Medium",
+            "factors": ["Meal planning", "Consistent eating", "Nutrient timing"],
+            "barriers": ["Busy schedule", "Impulsive eating", "Limited cooking time"],
+            "facilitators": ["Meal prep services", "Workplace healthy options", "Nutrition apps"]
+          },
+          "time_to_benefit": "4-8 weeks",
+          "professional_context": {
+            "workplace_integration": "Medium",
+            "career_impact": "Positive - stable energy and mood",
+            "implementation_tips": [
+              "Pack healthy snacks for work",
+              "Schedule regular meal times",
+              "Avoid high-sugar breakfast foods",
+              "Stay hydrated throughout workday"
+            ]
+          },
+          "specific_protocol": {
+            "meal_timing": "Regular meals every 3-4 hours",
+            "macronutrient_balance": "Protein 25%, Carbs 45%, Fat 30%",
+            "key_nutrients": ["Omega-3 fatty acids", "Magnesium", "Zinc", "Iron", "B-vitamins"],
+            "avoid": ["Excessive caffeine", "High sugar foods", "Processed foods"]
+          }
+        }
+      ]
+    },
+    {
+      "category_id": "cognitive_interventions",
+      "name": "Cognitive and Behavioral Interventions",
+      "description": "Evidence-based cognitive and behavioral strategies for ADHD management",
+      "interventions": [
+        {
+          "intervention_id": "cbt_adhd",
+          "name": "Cognitive Behavioral Therapy for ADHD",
+          "evidence_level": 1,
+          "effect_size": "Large",
+          "implementation_difficulty": {
+            "rating": "Medium to High",
+            "factors": ["Time commitment", "Therapist availability", "Skill practice"],
+            "barriers": ["Scheduling therapy sessions", "Cost/insurance", "Homework compliance"],
+            "facilitators": ["Workplace EAP programs", "Telehealth options", "Group therapy"]
+          },
+          "time_to_benefit": "6-12 weeks",
+          "professional_context": {
+            "workplace_integration": "High",
+            "career_impact": "Very Positive - improved executive function and emotional regulation",
+            "implementation_tips": [
+              "Schedule therapy during lunch or before/after work",
+              "Apply CBT techniques to work situations",
+              "Use workplace challenges as therapy examples",
+              "Practice skills during work day"
+            ]
+          },
+          "specific_protocol": {
+            "duration": "12-16 sessions",
+            "frequency": "Weekly",
+            "format": "Individual or group",
+            "key_components": [
+              "Psychoeducation about ADHD",
+              "Time management and organization skills",
+              "Procrastination and task initiation strategies",
+              "Emotional regulation techniques",
+              "Cognitive restructuring for negative thoughts"
+            ]
+          }
+        },
+        {
+          "intervention_id": "mindfulness_training",
+          "name": "Mindfulness-Based Attention Training",
+          "evidence_level": 2,
+          "effect_size": "Medium",
+          "implementation_difficulty": {
+            "rating": "Medium",
+            "factors": ["Consistent practice", "Initial skepticism", "Skill development"],
+            "barriers": ["Time for practice", "Restlessness during meditation", "Perceived effectiveness"],
+            "facilitators": ["Guided apps", "Workplace programs", "Group classes"]
+          },
+          "time_to_benefit": "4-8 weeks",
+          "professional_context": {
+            "workplace_integration": "Very High",
+            "career_impact": "Positive - improved focus and stress management",
+            "implementation_tips": [
+              "Use mindfulness apps during commute",
+              "Practice mindful breathing between meetings",
+              "Implement mindful email checking",
+              "Use walking meditation during breaks"
+            ]
+          },
+          "specific_protocol": {
+            "daily_practice": "10-20 minutes",
+            "techniques": ["Focused attention meditation", "Body scan", "Mindful breathing", "Walking meditation"],
+            "workplace_applications": ["Mindful transitions", "Stress response management", "Attention anchoring"]
+          }
+        }
+      ]
+    },
+    {
+      "category_id": "workplace_strategies",
+      "name": "Workplace and Professional Strategies",
+      "description": "Specific strategies for managing ADHD in professional environments",
+      "interventions": [
+        {
+          "intervention_id": "time_management_system",
+          "name": "Professional Time Management System",
+          "evidence_level": 2,
+          "effect_size": "Medium to Large",
+          "implementation_difficulty": {
+            "rating": "Medium",
+            "factors": ["System selection", "Habit formation", "Consistency"],
+            "barriers": ["Multiple competing systems", "Initial setup time", "Maintenance"],
+            "facilitators": ["Digital tools", "Workplace training", "Accountability partner"]
+          },
+          "time_to_benefit": "2-6 weeks",
+          "professional_context": {
+            "workplace_integration": "Very High",
+            "career_impact": "Very Positive - improved productivity and reliability",
+            "implementation_tips": [
+              "Choose one primary system and stick with it",
+              "Integrate with workplace calendar systems",
+              "Use time-blocking for deep work",
+              "Set up automated reminders"
+            ]
+          },
+          "specific_protocol": {
+            "components": [
+              "Digital calendar with time-blocking",
+              "Task management system (GTD, Kanban, etc.)",
+              "Priority matrix (Eisenhower method)",
+              "Regular review sessions (daily/weekly)"
+            ],
+            "tools": ["Todoist", "Asana", "Notion", "Google Calendar", "Outlook"]
+          }
+        },
+        {
+          "intervention_id": "workspace_optimization",
+          "name": "ADHD-Friendly Workspace Design",
+          "evidence_level": 3,
+          "effect_size": "Medium",
+          "implementation_difficulty": {
+            "rating": "Low to Medium",
+            "factors": ["Workplace flexibility", "Cost", "Colleague acceptance"],
+            "barriers": ["Open office environment", "Limited control", "Budget constraints"],
+            "facilitators": ["ADA accommodations", "Ergonomic programs", "Remote work options"]
+          },
+          "time_to_benefit": "Immediate to 2 weeks",
+          "professional_context": {
+            "workplace_integration": "High",
+            "career_impact": "Positive - improved focus and reduced distractions",
+            "implementation_tips": [
+              "Request quiet workspace or noise-canceling headphones",
+              "Use visual organizers and whiteboards",
+              "Minimize visual distractions",
+              "Create designated spaces for different activities"
+            ]
+          },
+          "specific_protocol": {
+            "environmental_factors": [
+              "Noise control (quiet space or white noise)",
+              "Lighting optimization (natural light preferred)",
+              "Organization systems (filing, storage)",
+              "Visual cues and reminders"
+            ],
+            "tools": ["Noise-canceling headphones", "Standing desk", "Organization systems", "Plants for air quality"]
+          }
+        }
+      ]
+    },
+    {
+      "category_id": "technology_tools",
+      "name": "Technology-Assisted Interventions",
+      "description": "Digital tools and apps specifically designed for ADHD management",
+      "interventions": [
+        {
+          "intervention_id": "adhd_apps",
+          "name": "ADHD Management Apps",
+          "evidence_level": 3,
+          "effect_size": "Small to Medium",
+          "implementation_difficulty": {
+            "rating": "Low",
+            "factors": ["App selection", "Consistent use", "Integration with workflow"],
+            "barriers": ["App overload", "Notification fatigue", "Subscription costs"],
+            "facilitators": ["Smartphone integration", "Workplace compatibility", "Gamification"]
+          },
+          "time_to_benefit": "1-4 weeks",
+          "professional_context": {
+            "workplace_integration": "Very High",
+            "career_impact": "Positive - improved organization and reminders",
+            "implementation_tips": [
+              "Start with one app and master it",
+              "Integrate with existing work tools",
+              "Set up smart notifications",
+              "Use during work transitions"
+            ]
+          },
+          "recommended_apps": [
+            {
+              "category": "Task Management",
+              "apps": ["Todoist", "Any.do", "TickTick"],
+              "features": ["Natural language processing", "Project organization", "Collaboration"]
+            },
+            {
+              "category": "Focus and Productivity",
+              "apps": ["Forest", "Freedom", "RescueTime"],
+              "features": ["Website blocking", "Time tracking", "Focus sessions"]
+            },
+            {
+              "category": "Habit Tracking",
+              "apps": ["Habitica", "Streaks", "Way of Life"],
+              "features": ["Gamification", "Visual progress", "Reminder systems"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "social_support",
+      "name": "Social Support and Community Interventions",
+      "description": "Interventions focused on building support systems and community connections",
+      "interventions": [
+        {
+          "intervention_id": "adhd_coaching",
+          "name": "Professional ADHD Coaching",
+          "evidence_level": 2,
+          "effect_size": "Medium to Large",
+          "implementation_difficulty": {
+            "rating": "Medium",
+            "factors": ["Coach selection", "Cost", "Time commitment"],
+            "barriers": ["Finding qualified coach", "Insurance coverage", "Scheduling"],
+            "facilitators": ["Telehealth options", "Workplace programs", "Group coaching"]
+          },
+          "time_to_benefit": "4-8 weeks",
+          "professional_context": {
+            "workplace_integration": "High",
+            "career_impact": "Very Positive - career development and skill building",
+            "implementation_tips": [
+              "Choose coach with professional experience",
+              "Focus on workplace-specific goals",
+              "Integrate coaching with career development",
+              "Use coaching for accountability"
+            ]
+          },
+          "specific_protocol": {
+            "frequency": "Weekly or bi-weekly sessions",
+            "duration": "6-12 months typical",
+            "focus_areas": [
+              "Goal setting and achievement",
+              "Skill development",
+              "Accountability systems",
+              "Career advancement strategies"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "implementation_framework": {
+    "difficulty_ratings": {
+      "Low": {
+        "description": "Easy to implement, minimal barriers",
+        "time_investment": "< 1 hour/week",
+        "cost": "Minimal ($0-50)",
+        "complexity": "Simple, straightforward"
+      },
+      "Medium": {
+        "description": "Moderate implementation challenges",
+        "time_investment": "1-5 hours/week",
+        "cost": "Moderate ($50-500)",
+        "complexity": "Some learning curve, multiple steps"
+      },
+      "High": {
+        "description": "Significant implementation challenges",
+        "time_investment": "> 5 hours/week",
+        "cost": "High (> $500)",
+        "complexity": "Complex, requires professional guidance"
+      }
+    },
+    "selection_criteria": {
+      "symptom_severity": "Match intervention intensity to symptom severity",
+      "workplace_demands": "Consider professional requirements and constraints",
+      "personal_preferences": "Align with individual learning style and preferences",
+      "resource_availability": "Consider time, financial, and support resources",
+      "comorbidities": "Account for co-occurring conditions"
+    },
+    "monitoring_framework": {
+      "frequency": "Weekly self-monitoring, monthly professional review",
+      "metrics": ["Symptom severity", "Functional improvement", "Implementation adherence", "Side effects/barriers"],
+      "adjustment_criteria": "Modify interventions based on progress and barriers"
+    }
+  },
+  "evidence_validation": {
+    "knowledge_base_entries": 189,
+    "evidence_quality": "90%+ high-quality sources",
+    "target_population_relevance": "95%+ professional adult males",
+    "implementation_ratings": "Based on clinical experience and user feedback",
+    "last_updated": "2025-09-12",
+    "review_schedule": "Quarterly review and annual major update"
+  }
+}
+

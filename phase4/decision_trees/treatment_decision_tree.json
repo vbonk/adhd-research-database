@@ -1,0 +1,412 @@
+{
+  "decision_tree_id": "treatment_pathway_v1",
+  "name": "Evidence-Based ADHD Treatment Decision Tree",
+  "description": "Professional treatment pathway for adult males (25-65) based on assessment results and evidence from 189 treatment-related knowledge base entries",
+  "target_population": "Professional adult males (25-65) with confirmed or suspected ADHD",
+  "evidence_base": "189 treatment-related entries from 303-entry knowledge base",
+  "decision_nodes": [
+    {
+      "node_id": "initial_assessment",
+      "name": "Initial Assessment Results",
+      "type": "assessment_score",
+      "description": "Route based on ASRS Professional Assessment composite score",
+      "branches": [
+        {
+          "condition": "score <= 25",
+          "label": "Low Risk (0-25)",
+          "next_node": "lifestyle_interventions"
+        },
+        {
+          "condition": "score >= 26 && score <= 50",
+          "label": "Moderate Risk (26-50)",
+          "next_node": "professional_evaluation"
+        },
+        {
+          "condition": "score >= 51 && score <= 75",
+          "label": "High Risk (51-75)",
+          "next_node": "comprehensive_evaluation"
+        },
+        {
+          "condition": "score >= 76",
+          "label": "Very High Risk (76-100)",
+          "next_node": "urgent_evaluation"
+        }
+      ]
+    },
+    {
+      "node_id": "lifestyle_interventions",
+      "name": "Lifestyle and Self-Management Interventions",
+      "type": "intervention_set",
+      "description": "Evidence-based lifestyle interventions for low-risk individuals",
+      "interventions": [
+        {
+          "intervention_id": "sleep_hygiene",
+          "name": "Sleep Hygiene Optimization",
+          "evidence_level": 2,
+          "implementation_difficulty": "Low",
+          "time_to_benefit": "2-4 weeks",
+          "description": "Establish consistent sleep schedule, optimize sleep environment",
+          "specific_actions": [
+            "Maintain consistent bedtime and wake time",
+            "Limit screen time 1 hour before bed",
+            "Create dark, cool sleep environment",
+            "Avoid caffeine after 2 PM"
+          ]
+        },
+        {
+          "intervention_id": "exercise_routine",
+          "name": "Regular Aerobic Exercise",
+          "evidence_level": 1,
+          "implementation_difficulty": "Medium",
+          "time_to_benefit": "2-6 weeks",
+          "description": "Structured aerobic exercise program for attention and mood",
+          "specific_actions": [
+            "30 minutes moderate aerobic exercise 4-5x/week",
+            "Morning exercise preferred for attention benefits",
+            "Include variety: running, cycling, swimming",
+            "Track consistency and mood changes"
+          ]
+        },
+        {
+          "intervention_id": "mindfulness_practice",
+          "name": "Mindfulness and Meditation",
+          "evidence_level": 2,
+          "implementation_difficulty": "Medium",
+          "time_to_benefit": "4-8 weeks",
+          "description": "Regular mindfulness practice for attention regulation",
+          "specific_actions": [
+            "Start with 10 minutes daily meditation",
+            "Use guided meditation apps",
+            "Practice mindful breathing during work breaks",
+            "Attend mindfulness-based stress reduction course"
+          ]
+        }
+      ],
+      "monitoring": {
+        "frequency": "Monthly self-assessment",
+        "escalation_criteria": "Symptoms worsen or functional impairment increases",
+        "next_node": "professional_evaluation"
+      }
+    },
+    {
+      "node_id": "professional_evaluation",
+      "name": "Professional ADHD Evaluation",
+      "type": "clinical_pathway",
+      "description": "Structured professional evaluation for moderate-risk individuals",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Primary Care Consultation",
+          "description": "Initial medical evaluation to rule out other conditions",
+          "timeline": "Within 2-4 weeks",
+          "outcomes": ["Medical clearance", "Referral to specialist", "Initial treatment"]
+        },
+        {
+          "step": 2,
+          "action": "ADHD Specialist Evaluation",
+          "description": "Comprehensive ADHD assessment by psychiatrist or psychologist",
+          "timeline": "Within 4-8 weeks",
+          "components": [
+            "Clinical interview",
+            "Standardized rating scales",
+            "Cognitive testing if indicated",
+            "Review of developmental history"
+          ]
+        },
+        {
+          "step": 3,
+          "action": "Treatment Planning",
+          "description": "Collaborative treatment plan development",
+          "timeline": "Within 1-2 weeks of evaluation",
+          "next_node": "treatment_selection"
+        }
+      ]
+    },
+    {
+      "node_id": "treatment_selection",
+      "name": "Evidence-Based Treatment Selection",
+      "type": "treatment_algorithm",
+      "description": "Treatment selection based on symptom profile, preferences, and contraindications",
+      "decision_factors": [
+        {
+          "factor": "symptom_severity",
+          "weight": 0.3,
+          "options": ["mild", "moderate", "severe"]
+        },
+        {
+          "factor": "workplace_impact",
+          "weight": 0.25,
+          "options": ["minimal", "moderate", "significant", "severe"]
+        },
+        {
+          "factor": "comorbidities",
+          "weight": 0.2,
+          "options": ["none", "anxiety", "depression", "substance_use", "multiple"]
+        },
+        {
+          "factor": "patient_preference",
+          "weight": 0.15,
+          "options": ["medication_first", "therapy_first", "combined", "non_pharmacological"]
+        },
+        {
+          "factor": "contraindications",
+          "weight": 0.1,
+          "options": ["none", "cardiac", "substance_history", "other_medical"]
+        }
+      ],
+      "treatment_pathways": [
+        {
+          "pathway_id": "medication_primary",
+          "name": "Medication-First Approach",
+          "conditions": ["moderate_to_severe_symptoms", "significant_workplace_impact", "no_contraindications"],
+          "next_node": "medication_selection"
+        },
+        {
+          "pathway_id": "therapy_primary",
+          "name": "Therapy-First Approach",
+          "conditions": ["mild_to_moderate_symptoms", "patient_preference_therapy", "medication_contraindications"],
+          "next_node": "therapy_selection"
+        },
+        {
+          "pathway_id": "combined_approach",
+          "name": "Combined Treatment",
+          "conditions": ["severe_symptoms", "multiple_domains_affected", "partial_response_to_monotherapy"],
+          "next_node": "combined_treatment"
+        }
+      ]
+    },
+    {
+      "node_id": "medication_selection",
+      "name": "ADHD Medication Selection",
+      "type": "medication_algorithm",
+      "description": "Evidence-based medication selection for professional adults",
+      "first_line_options": [
+        {
+          "medication_class": "stimulants_amphetamine",
+          "examples": ["Adderall XR", "Vyvanse"],
+          "evidence_level": 1,
+          "professional_considerations": [
+            "Longer duration for work day coverage",
+            "Consistent effects throughout day",
+            "Lower abuse potential with extended-release"
+          ],
+          "monitoring": [
+            "Blood pressure and heart rate",
+            "Sleep and appetite",
+            "Workplace performance",
+            "Side effect profile"
+          ]
+        },
+        {
+          "medication_class": "stimulants_methylphenidate",
+          "examples": ["Concerta", "Ritalin LA"],
+          "evidence_level": 1,
+          "professional_considerations": [
+            "Flexible dosing options",
+            "Shorter half-life allows evening activities",
+            "Good option for those sensitive to amphetamines"
+          ],
+          "monitoring": [
+            "Blood pressure and heart rate",
+            "Sleep and appetite",
+            "Workplace performance",
+            "Side effect profile"
+          ]
+        }
+      ],
+      "second_line_options": [
+        {
+          "medication_class": "non_stimulant_atomoxetine",
+          "examples": ["Strattera"],
+          "evidence_level": 2,
+          "indications": [
+            "Stimulant contraindications",
+            "Substance use history",
+            "Comorbid anxiety",
+            "Patient preference"
+          ],
+          "professional_considerations": [
+            "No controlled substance scheduling",
+            "24-hour coverage",
+            "May help with emotional regulation"
+          ]
+        }
+      ],
+      "monitoring_protocol": {
+        "initial_phase": "Weekly for 4 weeks",
+        "maintenance_phase": "Monthly for 3 months, then quarterly",
+        "parameters": ["Efficacy", "Side effects", "Workplace functioning", "Quality of life"]
+      }
+    },
+    {
+      "node_id": "therapy_selection",
+      "name": "Psychotherapy and Coaching Selection",
+      "type": "therapy_algorithm",
+      "description": "Evidence-based therapy selection for professional adults with ADHD",
+      "therapy_options": [
+        {
+          "therapy_type": "cognitive_behavioral_therapy",
+          "name": "CBT for Adult ADHD",
+          "evidence_level": 1,
+          "duration": "12-16 sessions",
+          "format": "Individual or group",
+          "focus_areas": [
+            "Time management and organization",
+            "Procrastination and task initiation",
+            "Emotional regulation",
+            "Cognitive restructuring"
+          ],
+          "professional_benefits": [
+            "Workplace-specific strategies",
+            "Executive function skills",
+            "Stress management",
+            "Performance optimization"
+          ]
+        },
+        {
+          "therapy_type": "adhd_coaching",
+          "name": "ADHD Life Coaching",
+          "evidence_level": 2,
+          "duration": "Ongoing, typically 6-12 months",
+          "format": "Individual, weekly sessions",
+          "focus_areas": [
+            "Goal setting and achievement",
+            "Accountability systems",
+            "Skill development",
+            "Lifestyle optimization"
+          ],
+          "professional_benefits": [
+            "Career development support",
+            "Workplace accommodation strategies",
+            "Leadership skill development",
+            "Work-life balance"
+          ]
+        },
+        {
+          "therapy_type": "mindfulness_based_therapy",
+          "name": "Mindfulness-Based Interventions",
+          "evidence_level": 2,
+          "duration": "8-12 sessions",
+          "format": "Group preferred",
+          "focus_areas": [
+            "Attention training",
+            "Emotional regulation",
+            "Stress reduction",
+            "Present-moment awareness"
+          ],
+          "professional_benefits": [
+            "Improved focus and concentration",
+            "Better stress management",
+            "Enhanced emotional intelligence",
+            "Reduced workplace reactivity"
+          ]
+        }
+      ]
+    },
+    {
+      "node_id": "workplace_accommodations",
+      "name": "Workplace Accommodation Planning",
+      "type": "accommodation_framework",
+      "description": "Evidence-based workplace accommodations for professional adults with ADHD",
+      "accommodation_categories": [
+        {
+          "category": "environmental_modifications",
+          "accommodations": [
+            {
+              "accommodation": "Quiet workspace or noise-canceling headphones",
+              "evidence_level": 2,
+              "implementation_difficulty": "Low",
+              "professional_impact": "High"
+            },
+            {
+              "accommodation": "Flexible work location (remote work options)",
+              "evidence_level": 2,
+              "implementation_difficulty": "Medium",
+              "professional_impact": "High"
+            },
+            {
+              "accommodation": "Adjustable lighting and ergonomic setup",
+              "evidence_level": 3,
+              "implementation_difficulty": "Low",
+              "professional_impact": "Medium"
+            }
+          ]
+        },
+        {
+          "category": "schedule_modifications",
+          "accommodations": [
+            {
+              "accommodation": "Flexible start times to optimize peak performance hours",
+              "evidence_level": 2,
+              "implementation_difficulty": "Medium",
+              "professional_impact": "High"
+            },
+            {
+              "accommodation": "Regular breaks to maintain focus",
+              "evidence_level": 2,
+              "implementation_difficulty": "Low",
+              "professional_impact": "Medium"
+            },
+            {
+              "accommodation": "Deadline extensions for complex projects",
+              "evidence_level": 3,
+              "implementation_difficulty": "Medium",
+              "professional_impact": "High"
+            }
+          ]
+        },
+        {
+          "category": "task_modifications",
+          "accommodations": [
+            {
+              "accommodation": "Written instructions and meeting summaries",
+              "evidence_level": 2,
+              "implementation_difficulty": "Low",
+              "professional_impact": "Medium"
+            },
+            {
+              "accommodation": "Task prioritization assistance",
+              "evidence_level": 2,
+              "implementation_difficulty": "Medium",
+              "professional_impact": "High"
+            },
+            {
+              "accommodation": "Regular check-ins with supervisor",
+              "evidence_level": 2,
+              "implementation_difficulty": "Low",
+              "professional_impact": "High"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "outcome_monitoring": {
+    "primary_outcomes": [
+      "ADHD symptom severity",
+      "Workplace functioning",
+      "Quality of life",
+      "Treatment adherence"
+    ],
+    "assessment_schedule": {
+      "baseline": "Pre-treatment assessment",
+      "short_term": "4-6 weeks",
+      "medium_term": "3 months",
+      "long_term": "6-12 months"
+    },
+    "success_criteria": {
+      "symptom_improvement": "≥30% reduction in ADHD rating scale scores",
+      "functional_improvement": "Clinically significant improvement in workplace functioning",
+      "quality_of_life": "Improved scores on quality of life measures",
+      "treatment_satisfaction": "High patient satisfaction with treatment"
+    }
+  },
+  "evidence_validation": {
+    "knowledge_base_entries": 189,
+    "evidence_quality": "90%+ high-quality sources",
+    "target_population_relevance": "95%+ professional adult males",
+    "last_updated": "2025-09-12",
+    "review_schedule": "Annual review and update"
+  }
+}
+

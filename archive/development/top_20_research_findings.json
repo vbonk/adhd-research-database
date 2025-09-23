@@ -1,0 +1,599 @@
+[
+  {
+    "id": 1,
+    "knowledge_id": "ADD-Workplace-001",
+    "title": "Executive Dysfunction and Time Management",
+    "domain": "Workplace & Career Impact",
+    "summary": "Adult males (25-65, professional) with attention-deficit/hyperactivity disorder (ADHD) frequently experience significant executive function deficits, leading to challenges in time management, organization, and an increased risk of job burnout. Late diagnosis and masking behaviors can further complicate identification and support in professional contexts.",
+    "evidence_level": "High",
+    "professional_relevance": "Very High",
+    "effect_size": "Significant impact on work-related outcomes and personal relationships; specific effect sizes vary by study and outcome.",
+    "implementation_difficulty": "Medium",
+    "time_to_benefit": "4-8 weeks",
+    "key_findings": [
+      "Increased job burnout (physical fatigue, emotional exhaustion, cognitive weariness)",
+      "Difficulties with self-management to time and organization",
+      "Challenges in problem-solving and task initiation"
+    ],
+    "professional_implications": "Relevant for Professional, intelligent, working-age men (25-65) with potential or diagnosed attention-deficit/hyperactivity disorder.",
+    "implementation_tips": [
+      "Consult with healthcare provider",
+      "Consider workplace accommodations",
+      "Monitor progress regularly"
+    ],
+    "research_source": "Systematic reviews, meta-analyses, and qualitative studies were consulted. - Evidence Level 4",
+    "workplace_scenarios": [
+      "General Professional Settings"
+    ],
+    "full_knowledge_point": "Adult males (25-65, professional) with attention-deficit/hyperactivity disorder (ADHD) frequently experience significant executive function deficits, leading to challenges in time management, organization, and an increased risk of job burnout. Late diagnosis and masking behaviors can further complicate identification and support in professional contexts.",
+    "limitations": "Research often generalizes adult ADHD populations; specific data for professional males aged 25-65 may be limited. Qualitative studies, while insightful, limit generalizability. Some older studies may use outdated diagnostic criteria.",
+    "certainty_grade": "Moderate"
+  },
+  {
+    "id": 133,
+    "knowledge_id": "ADD-Workplace-Innovation-001",
+    "title": "Innovation and strengths in the workplace",
+    "domain": "Workplace & Career Impact",
+    "summary": "Individuals with ADHD can excel in dynamic, fast-paced environments, leveraging their energy, creativity, and problem-solving skills, demonstrating that ADHD-related traits can be strengths in the right context.",
+    "evidence_level": "High",
+    "professional_relevance": "Very High",
+    "effect_size": "Not specified",
+    "implementation_difficulty": "Medium",
+    "time_to_benefit": "4-8 weeks",
+    "key_findings": [
+      "Enhanced job performance",
+      "Improved workplace effectiveness",
+      "Positive professional relationships"
+    ],
+    "professional_implications": "Relevant for Adult workers with ADHD (25-65, professional)",
+    "implementation_tips": [
+      "Consult with healthcare provider",
+      "Consider workplace accommodations",
+      "Monitor progress regularly"
+    ],
+    "research_source": "Scoping review and case study - Evidence Level 4",
+    "workplace_scenarios": [
+      "General Professional Settings"
+    ],
+    "full_knowledge_point": "Individuals with ADHD can excel in dynamic, fast-paced environments, leveraging their energy, creativity, and problem-solving skills, demonstrating that ADHD-related traits can be strengths in the right context.",
+    "limitations": "The scoping review synthesizes various study types, and specific details on effect sizes, heterogeneity, and publication bias are not provided in the abstract. The case study is a single instance.",
+    "certainty_grade": "Moderate"
+  },
+  {
+    "id": 199,
+    "knowledge_id": "ADD-Workplace-001",
+    "title": "Workplace diversity and ADHD inclusion",
+    "domain": "Workplace & Career Impact",
+    "summary": "Systematic reviews highlight challenges, strengths, adaptations, and sex differences for adults with ADHD in the workplace, emphasizing person-environment fit, accommodations, and the need for context-specific interventions and psychoeducation.",
+    "evidence_level": "High",
+    "professional_relevance": "Very High",
+    "effect_size": "Not explicitly quantified in abstracts",
+    "implementation_difficulty": "Medium",
+    "time_to_benefit": "4-8 weeks",
+    "key_findings": [
+      "ADHD symptoms at work",
+      "workplace performance",
+      "job satisfaction"
+    ],
+    "professional_implications": "Relevant for Adults with ADHD in employment, with specific focus on interventions for adult ADHDers (25-65, professional) in the workplace.",
+    "implementation_tips": [
+      "Consult with healthcare provider",
+      "Consider workplace accommodations",
+      "Monitor progress regularly"
+    ],
+    "research_source": "Systematic Literature Review - Evidence Level 4",
+    "workplace_scenarios": [
+      "General Professional Settings"
+    ],
+    "full_knowledge_point": "Systematic reviews highlight challenges, strengths, adaptations, and sex differences for adults with ADHD in the workplace, emphasizing person-environment fit, accommodations, and the need for context-specific interventions and psychoeducation.",
+    "limitations": "Paucity of context-specific research for theory and practice in interventions for ADHD at work; structural barriers to accessing support (disclosure, access to coaching).",
+    "certainty_grade": "Moderate"
+  },
+  {
+    "id": 209,
+    "knowledge_id": "ADD-WorkplaceStress-001",
+    "title": "Interventions for Adults with ADHD at Work",
+    "domain": "Workplace Stress Management for ADHD",
+    "summary": "Psychosocial interventions show positive impact on work outcomes for adults with ADHD, while pharmacological interventions alone did not demonstrate significant positive effects on work productivity or occupational status.",
+    "evidence_level": "High",
+    "professional_relevance": "Very High",
+    "effect_size": "Not explicitly quantified in the systematic review, but positive impact noted for psychosocial interventions.",
+    "implementation_difficulty": "Medium",
+    "time_to_benefit": "4-8 weeks",
+    "key_findings": [
+      "Improved functioning at work",
+      "Maintaining employment",
+      "General organization and time management"
+    ],
+    "professional_implications": "Relevant for Adults with ADHD (general, with implications for professional males aged 25-65)",
+    "implementation_tips": [
+      "Consult with healthcare provider",
+      "Consider workplace accommodations",
+      "Monitor progress regularly"
+    ],
+    "research_source": "Systematic Review - Evidence Level 4",
+    "workplace_scenarios": [
+      "General Professional Settings"
+    ],
+    "full_knowledge_point": "Psychosocial interventions show positive impact on work outcomes for adults with ADHD, while pharmacological interventions alone did not demonstrate significant positive effects on work productivity or occupational status.",
+    "limitations": "Paucity of context-specific research, particularly studies conducted in actual workplace environments. Lack of sufficient reliability or validity estimates for many work-relevant measures. Limited generalizability due to exclusion of certain study types (e.g., those not explicitly measuring workplace performance).",
+    "certainty_grade": "Moderate"
+  },
+  {
+    "id": 257,
+    "knowledge_id": "ADD-Workplace-001",
+    "title": "Interventions and Accommodations for ADHD in the Workplace",
+    "domain": "Workplace & Career Impact",
+    "summary": "Psychosocial interventions combined with pharmacological treatments show positive impact on work outcomes for adults with ADHD, while pharmacological interventions alone have limited effect on work productivity.",
+    "evidence_level": "High",
+    "professional_relevance": "Very High",
+    "effect_size": "Not explicitly quantified in the review, but positive impact noted for combined interventions.",
+    "implementation_difficulty": "Medium",
+    "time_to_benefit": "4-8 weeks",
+    "key_findings": [
+      "Improved functioning at work",
+      "Maintaining employment"
+    ],
+    "professional_implications": "Relevant for Adults with ADHD (general, not specific to male or age range 25-65, professional)",
+    "implementation_tips": [
+      "Consult with healthcare provider",
+      "Consider workplace accommodations",
+      "Monitor progress regularly"
+    ],
+    "research_source": "Systematic Review - Evidence Level 4",
+    "workplace_scenarios": [
+      "General Professional Settings"
+    ],
+    "full_knowledge_point": "Psychosocial interventions combined with pharmacological treatments show positive impact on work outcomes for adults with ADHD, while pharmacological interventions alone have limited effect on work productivity.",
+    "limitations": "Paucity of context-specific research, lack of studies in actual workplace contexts, work-relevant measures often lacked sufficient reliability/validity or consisted of only one item.",
+    "certainty_grade": "Low (due to paucity of context-specific research and limitations in work-relevant measures)"
+  },
+  {
+    "id": 2,
+    "knowledge_id": "ADD-Workplace-ExecutiveFunction-001",
+    "title": "Executive Function",
+    "domain": "Workplace & Career Impact",
+    "summary": "Adults with ADHD often face significant deficits in executive function, which can lead to adverse work-related outcomes, including difficulties with time management, organization, and task completion.",
+    "evidence_level": "High",
+    "professional_relevance": "Very High",
+    "effect_size": "Not Applicable",
+    "implementation_difficulty": "Medium",
+    "time_to_benefit": "4-8 weeks",
+    "key_findings": [
+      "Poor job performance",
+      "Lower occupational status",
+      "Less job stability"
+    ],
+    "professional_implications": "Relevant for Adult male professionals (25-65) with ADHD",
+    "implementation_tips": [
+      "Consult with healthcare provider",
+      "Consider workplace accommodations",
+      "Monitor progress regularly"
+    ],
+    "research_source": "Consensus Statement - Evidence Level 5",
+    "workplace_scenarios": [
+      "General Professional Settings"
+    ],
+    "full_knowledge_point": "Adults with ADHD often face significant deficits in executive function, which can lead to adverse work-related outcomes, including difficulties with time management, organization, and task completion.",
+    "limitations": "This is a consensus statement, not a systematic review or meta-analysis. The recommendations are based on expert opinion and may not be generalizable.",
+    "certainty_grade": "Low"
+  },
+  {
+    "id": 4,
+    "knowledge_id": "ADD-WorkplaceCareerImpact-001",
+    "title": "Leadership",
+    "domain": "Workplace & Career Impact",
+    "summary": "Adults with ADHD may thrive in manual and creative roles, and hyperactivity can benefit self-employment.",
+    "evidence_level": "High",
+    "professional_relevance": "Very High",
+    "effect_size": "Not specified",
+    "implementation_difficulty": "Medium",
+    "time_to_benefit": "4-8 weeks",
+    "key_findings": [
+      "Job performance",
+      "Job stability",
+      "Workplace injuries"
+    ],
+    "professional_implications": "Relevant for Adult males with ADHD (25-65, professional)",
+    "implementation_tips": [
+      "Consult with healthcare provider",
+      "Consider workplace accommodations",
+      "Monitor progress regularly"
+    ],
+    "research_source": "Non-systematic review - Evidence Level 4",
+    "workplace_scenarios": [
+      "General Professional Settings"
+    ],
+    "full_knowledge_point": "Adults with ADHD may thrive in manual and creative roles, and hyperactivity can benefit self-employment.",
+    "limitations": "Non-systematic review, potential for publication bias.",
+    "certainty_grade": "Low"
+  },
+  {
+    "id": 15,
+    "knowledge_id": "ADD-Workplace-Compensation-001",
+    "title": "Compensation Strategies",
+    "domain": "Workplace & Career Impact",
+    "summary": "Professionally successful adult males with ADHD utilize conscious, energy-demanding compensation strategies to manage symptoms and maintain high performance in the workplace.",
+    "evidence_level": "High",
+    "professional_relevance": "Very High",
+    "effect_size": "Not applicable",
+    "implementation_difficulty": "Medium",
+    "time_to_benefit": "4-8 weeks",
+    "key_findings": [
+      "Successful professional performance",
+      "Symptom management"
+    ],
+    "professional_implications": "Relevant for Adult males (25-65) with high-functioning ADHD in professional contexts.",
+    "implementation_tips": [
+      "Consult with healthcare provider",
+      "Consider workplace accommodations",
+      "Monitor progress regularly"
+    ],
+    "research_source": "Observational study - Evidence Level 4",
+    "workplace_scenarios": [
+      "General Professional Settings"
+    ],
+    "full_knowledge_point": "Professionally successful adult males with ADHD utilize conscious, energy-demanding compensation strategies to manage symptoms and maintain high performance in the workplace.",
+    "limitations": "Abstract-level data only; full text not accessed. Small sample size and observational design limit generalizability.",
+    "certainty_grade": "Low"
+  },
+  {
+    "id": 48,
+    "knowledge_id": "ADD-Workplace-RA001",
+    "title": "Reasonable Adjustments for ADHD",
+    "domain": "Workplace Accommodations",
+    "summary": "Educating managers and HR professionals about ADHD and reasonable adjustments can increase awareness and improve decision-making, leading to a more inclusive workplace.",
+    "evidence_level": "High",
+    "professional_relevance": "Very High",
+    "effect_size": "Small positive effect for interventions on work-related outcomes (meta-analysis of 12 studies). E-learning program showed increased knowledge and improved granting of adjustments.",
+    "implementation_difficulty": "Medium",
+    "time_to_benefit": "4-8 weeks",
+    "key_findings": [
+      "Increased knowledge of reasonable adjustments and ADHD among managers/HR professionals",
+      "Improved granting of reasonable adjustments",
+      "Reduced stereotypical comments"
+    ],
+    "professional_implications": "Relevant for Adult males (25-65), professional",
+    "implementation_tips": [
+      "Consult with healthcare provider",
+      "Consider workplace accommodations",
+      "Monitor progress regularly"
+    ],
+    "research_source": "Mixed methods (rapid evidence assessment, systematic review, meta-analysis, template analysis, randomized-control trial) - Evidence Level 5",
+    "workplace_scenarios": [
+      "General Professional Settings"
+    ],
+    "full_knowledge_point": "Educating managers and HR professionals about ADHD and reasonable adjustments can increase awareness and improve decision-making, leading to a more inclusive workplace.",
+    "limitations": "Limited research on work-related support and understanding of ADHD, especially for psychosocial interventions transferring to workplace contexts.",
+    "certainty_grade": "Medium"
+  },
+  {
+    "id": 135,
+    "knowledge_id": "ADD-Burnout-001",
+    "title": "Preventing burnout in demanding careers with ADHD",
+    "domain": "Workplace & Career Impact",
+    "summary": "Executive function deficits mediate the relationship between ADHD and job burnout in professional adult males, highlighting the need for targeted interventions.",
+    "evidence_level": "High",
+    "professional_relevance": "Very High",
+    "effect_size": "Not explicitly quantified in the provided abstracts for a single, unified effect size across all outcomes.",
+    "implementation_difficulty": "Medium",
+    "time_to_benefit": "4-8 weeks",
+    "key_findings": [
+      "Higher job burnout in employees with ADHD.",
+      "Executive function deficits (self-management to time, self-organization/problem-solving) mediate the ADHD-burnout relationship.",
+      "Psychoeducation and self-awareness are crucial for effective support."
+    ],
+    "professional_implications": "Relevant for Adult males (25-65) with ADHD in professional careers.",
+    "implementation_tips": [
+      "Consult with healthcare provider",
+      "Consider workplace accommodations",
+      "Monitor progress regularly"
+    ],
+    "research_source": "Systematic review and field study (N=171) - Evidence Level 4",
+    "workplace_scenarios": [
+      "General Professional Settings"
+    ],
+    "full_knowledge_point": "Executive function deficits mediate the relationship between ADHD and job burnout in professional adult males, highlighting the need for targeted interventions.",
+    "limitations": "Paucity of context-specific research on interventions for adults with ADHD at work. Specific details on effect size, risk of bias, heterogeneity, and publication bias were not available in the provided abstracts.",
+    "certainty_grade": "Moderate"
+  },
+  {
+    "id": 179,
+    "knowledge_id": "ADD-WorkplaceCareerImpact-ImpostorSyndrome-001",
+    "title": "ADHD and impostor syndrome in high achievers",
+    "domain": "Workplace & Career Impact",
+    "summary": "High-achieving adults with ADHD often experience impostor syndrome, feeling like frauds despite success, due to inattention and overcompensation in neurotypical environments.",
+    "evidence_level": "High",
+    "professional_relevance": "Very High",
+    "effect_size": "Not applicable",
+    "implementation_difficulty": "Medium",
+    "time_to_benefit": "4-8 weeks",
+    "key_findings": [
+      "Increased self-doubt",
+      "Fear of being exposed as a fraud",
+      "Perfectionism"
+    ],
+    "professional_implications": "Relevant for Adult males (25-65) with ADHD in professional settings.",
+    "implementation_tips": [
+      "Consult with healthcare provider",
+      "Consider workplace accommodations",
+      "Monitor progress regularly"
+    ],
+    "research_source": "Qualitative analysis and synthesis of existing literature. - Evidence Level 4",
+    "workplace_scenarios": [
+      "General Professional Settings"
+    ],
+    "full_knowledge_point": "High-achieving adults with ADHD often experience impostor syndrome, feeling like frauds despite success, due to inattention and overcompensation in neurotypical environments.",
+    "limitations": "The information is based on a non-systematic review of articles and web pages, not a formal research study. The connection between ADHD and impostor syndrome is correlational, not causal.",
+    "certainty_grade": "Moderate"
+  },
+  {
+    "id": 195,
+    "knowledge_id": "ADD-Workplace-ConflictResolution-001",
+    "title": "Interventions for ADHD in the workplace",
+    "domain": "Workplace Conflict Resolution",
+    "summary": "Psychosocial interventions, particularly when combined with pharmacological treatments, show positive impact on work functioning and employment for adults with ADHD.",
+    "evidence_level": "High",
+    "professional_relevance": "Very High",
+    "effect_size": "Not explicitly quantified in the review, but positive impact noted for combined interventions.",
+    "implementation_difficulty": "Medium",
+    "time_to_benefit": "4-8 weeks",
+    "key_findings": [
+      "Improved functioning at work",
+      "Maintaining employment",
+      "General organization and time management skills"
+    ],
+    "professional_implications": "Relevant for Adult males (25-65) with ADHD, professionals",
+    "implementation_tips": [
+      "Consult with healthcare provider",
+      "Consider workplace accommodations",
+      "Monitor progress regularly"
+    ],
+    "research_source": "Systematic Review - Evidence Level 4",
+    "workplace_scenarios": [
+      "General Professional Settings"
+    ],
+    "full_knowledge_point": "Psychosocial interventions, particularly when combined with pharmacological treatments, show positive impact on work functioning and employment for adults with ADHD.",
+    "limitations": "Paucity of context-specific research in actual workplace settings; lack of reliability/validity estimates for some measures; limited direct measures of social functioning.",
+    "certainty_grade": "Moderate"
+  },
+  {
+    "id": 197,
+    "knowledge_id": "ADD-Coaching-001",
+    "title": "Peer coaching models for adult ADHD",
+    "domain": "Evidence-Based Treatments",
+    "summary": "Psychosocial interventions, including coaching and peer support, show positive impact on work outcomes for adults with ADHD, though specific peer coaching models for professional adult men are under-researched.",
+    "evidence_level": "High",
+    "professional_relevance": "Very High",
+    "effect_size": "Not explicitly quantified for peer coaching in this review.",
+    "implementation_difficulty": "Medium",
+    "time_to_benefit": "4-8 weeks",
+    "key_findings": [
+      "Improved functioning at work",
+      "Maintaining employment",
+      "Improved social relationships"
+    ],
+    "professional_implications": "Relevant for Adult males (25-65) with ADHD in professional settings.",
+    "implementation_tips": [
+      "Consult with healthcare provider",
+      "Consider workplace accommodations",
+      "Monitor progress regularly"
+    ],
+    "research_source": "Systematic Review - Evidence Level 4",
+    "workplace_scenarios": [
+      "General Professional Settings"
+    ],
+    "full_knowledge_point": "Psychosocial interventions, including coaching and peer support, show positive impact on work outcomes for adults with ADHD, though specific peer coaching models for professional adult men are under-researched.",
+    "limitations": "Paucity of context-specific research on workplace interventions for adult ADHD. Limited studies specifically on peer coaching models for professional adult men. Many studies did not specifically measure social functioning or compare group vs. individual interventions.",
+    "certainty_grade": "Moderate"
+  },
+  {
+    "id": 217,
+    "knowledge_id": "ADD-Workplace-001",
+    "title": "Workplace performance reviews",
+    "domain": "Workplace & Career Impact",
+    "summary": "Strategies for adults with ADHD to navigate and improve performance evaluations.",
+    "evidence_level": "High",
+    "professional_relevance": "Very High",
+    "effect_size": "N/A",
+    "implementation_difficulty": "Medium",
+    "time_to_benefit": "4-8 weeks",
+    "key_findings": [
+      "Improved performance evaluation outcomes",
+      "Enhanced receptivity to feedback",
+      "Proactive problem-solving for improvement areas"
+    ],
+    "professional_implications": "Relevant for Adult males (25-65) with potential or diagnosed ADHD in professional settings.",
+    "implementation_tips": [
+      "Consult with healthcare provider",
+      "Consider workplace accommodations",
+      "Monitor progress regularly"
+    ],
+    "research_source": "Expert opinion/Practical advice - Evidence Level 4",
+    "workplace_scenarios": [
+      "General Professional Settings"
+    ],
+    "full_knowledge_point": "Strategies for adults with ADHD to navigate and improve performance evaluations.",
+    "limitations": "Based on expert opinion and practical advice, not empirical research. Lacks quantitative data on effectiveness.",
+    "certainty_grade": "Very Low"
+  },
+  {
+    "id": 221,
+    "knowledge_id": "ADD-Workplace-001",
+    "title": "Emergency Preparedness",
+    "domain": "Workplace & Career Impact",
+    "summary": "Structured environments and clear roles can enhance the performance of adults with ADHD in emergency situations, leveraging their ability to multitask and remain calm under pressure.",
+    "evidence_level": "High",
+    "professional_relevance": "Very High",
+    "effect_size": "Not Applicable",
+    "implementation_difficulty": "Medium",
+    "time_to_benefit": "4-8 weeks",
+    "key_findings": [
+      "Increased prevalence of ADHD characteristics in emergency service workers.",
+      "Identification of workplace challenges and accommodations for adults with ADHD."
+    ],
+    "professional_implications": "Relevant for Adult males (25-65) with ADHD in professional roles, particularly in emergency services.",
+    "implementation_tips": [
+      "Consult with healthcare provider",
+      "Consider workplace accommodations",
+      "Monitor progress regularly"
+    ],
+    "research_source": "Descriptive and evaluative research, including literature review and survey. - Evidence Level 4",
+    "workplace_scenarios": [
+      "General Professional Settings"
+    ],
+    "full_knowledge_point": "Structured environments and clear roles can enhance the performance of adults with ADHD in emergency situations, leveraging their ability to multitask and remain calm under pressure.",
+    "limitations": "The study's survey relied on a diagnostic tool for children, potentially affecting the accuracy of prevalence rates in adults. The survey sample was limited to Executive Fire Officers at the National Fire Academy.",
+    "certainty_grade": "Moderate"
+  },
+  {
+    "id": 241,
+    "knowledge_id": "ADD-WorkplaceInnovation-001",
+    "title": "Workplace innovation and ADHD strengths",
+    "domain": "Workplace & Career Impact",
+    "summary": "Adults with ADHD demonstrate strengths like creativity, hyperfocus, and resilience in the workplace, but face challenges related to executive function and social perception.",
+    "evidence_level": "High",
+    "professional_relevance": "Very High",
+    "effect_size": "Not reported",
+    "implementation_difficulty": "Medium",
+    "time_to_benefit": "4-8 weeks",
+    "key_findings": [
+      "Improved workplace adaptation with accommodations",
+      "Enhanced creativity and innovation",
+      "Increased productivity through hyperfocus"
+    ],
+    "professional_implications": "Relevant for Adult male professionals (25-65) with ADHD",
+    "implementation_tips": [
+      "Consult with healthcare provider",
+      "Consider workplace accommodations",
+      "Monitor progress regularly"
+    ],
+    "research_source": "Systematic literature review - Evidence Level 4",
+    "workplace_scenarios": [
+      "General Professional Settings"
+    ],
+    "full_knowledge_point": "Adults with ADHD demonstrate strengths like creativity, hyperfocus, and resilience in the workplace, but face challenges related to executive function and social perception.",
+    "limitations": "Employment rates by sex not consistent, males emphasize work safety less, self-report bias, lack of gender role commentary.",
+    "certainty_grade": "Moderate"
+  },
+  {
+    "id": 46,
+    "knowledge_id": "ADD-Treatment-GT001",
+    "title": "Group Therapy for Adult ADHD",
+    "domain": "Evidence-Based Treatments",
+    "summary": "Psychosocial interventions, particularly CBT, are more efficacious than pharmacological interventions for improving work-related outcomes in adults with ADHD.",
+    "evidence_level": "High",
+    "professional_relevance": "Very High",
+    "effect_size": "Psychosocial interventions (d = .56); Pharmacological interventions (d = .19)",
+    "implementation_difficulty": "Medium",
+    "time_to_benefit": "4-8 weeks",
+    "key_findings": [
+      "Work-relevant outcomes (organization, time management, productivity, quality of life)",
+      "Adult ADHD Quality of Life (AAQoL)",
+      "Adapted Child Organizational Skills Measure (AOMP)"
+    ],
+    "professional_implications": "Relevant for Adults with ADHD, with intervention groups having 52% men and a mean age of 33.2 years (relevant to 25-65, professional adult males).",
+    "implementation_tips": [
+      "Consult with healthcare provider",
+      "Consider workplace accommodations",
+      "Monitor progress regularly"
+    ],
+    "research_source": "Meta-analysis of 23 studies, including randomized and non-randomized control studies. - Evidence Level 4",
+    "workplace_scenarios": [
+      "General Professional Settings"
+    ],
+    "full_knowledge_point": "Psychosocial interventions, particularly CBT, are more efficacious than pharmacological interventions for improving work-related outcomes in adults with ADHD.",
+    "limitations": "Meta-analysis was not preregistered. Evidence of heterogeneity found. Minimal research on workplace interventions for ADHD generally. Need for more research on psychoeducation's role.",
+    "certainty_grade": "Moderate"
+  },
+  {
+    "id": 91,
+    "knowledge_id": "ADD-WorkplaceInterventions-001",
+    "title": "Workplace Interventions",
+    "domain": "Evidence-Based Treatments",
+    "summary": "Psychosocial interventions, especially when combined with pharmacological treatments, positively impact work outcomes for adults with ADHD, improving functioning and maintaining employment.",
+    "evidence_level": "High",
+    "professional_relevance": "Very High",
+    "effect_size": "Not explicitly quantified in the review, but positive impact reported.",
+    "implementation_difficulty": "Medium",
+    "time_to_benefit": "4-8 weeks",
+    "key_findings": [
+      "Improved functioning at work",
+      "Maintaining employment",
+      "Improved general organization and time management (secondary outcome)"
+    ],
+    "professional_implications": "Relevant for Adult males (25-65) with ADHD in a professional context.",
+    "implementation_tips": [
+      "Consult with healthcare provider",
+      "Consider workplace accommodations",
+      "Monitor progress regularly"
+    ],
+    "research_source": "Systematic Review - Evidence Level 4",
+    "workplace_scenarios": [
+      "General Professional Settings"
+    ],
+    "full_knowledge_point": "Psychosocial interventions, especially when combined with pharmacological treatments, positively impact work outcomes for adults with ADHD, improving functioning and maintaining employment.",
+    "limitations": "Paucity of context-specific research for workplace interventions; most studies not conducted in actual workplace settings; lack of robust research investigating psychosocial interventions; many work-relevant measures lacked sufficient reliability or validity or consisted of only one item; exclusion of gray literature.",
+    "certainty_grade": "Moderate"
+  },
+  {
+    "id": 98,
+    "knowledge_id": "ADD-Therapy-PTSDADHDComorbidity",
+    "title": "Comorbidity of PTSD and ADHD in Adults",
+    "domain": "Evidence-Based Treatments",
+    "summary": "ADHD and PTSD commonly co-occur in adults, leading to more severe clinical outcomes. Treatment approaches include pharmacotherapy and mindfulness training.",
+    "evidence_level": "High",
+    "professional_relevance": "Very High",
+    "effect_size": "Prevalence of comorbidity ranging between 28 and 36%",
+    "implementation_difficulty": "Medium",
+    "time_to_benefit": "4-8 weeks",
+    "key_findings": [
+      "Increased risk of developing PTSD in individuals with ADHD",
+      "Greater psychosocial impairment in comorbid patients",
+      "More severe PTSD symptoms in comorbid patients"
+    ],
+    "professional_implications": "Relevant for Adults with ADHD and PTSD (25-65, professional male focus)",
+    "implementation_tips": [
+      "Consult with healthcare provider",
+      "Consider workplace accommodations",
+      "Monitor progress regularly"
+    ],
+    "research_source": "Systematic Review - Evidence Level 4",
+    "workplace_scenarios": [
+      "General Professional Settings"
+    ],
+    "full_knowledge_point": "ADHD and PTSD commonly co-occur in adults, leading to more severe clinical outcomes. Treatment approaches include pharmacotherapy and mindfulness training.",
+    "limitations": "The systematic review did not perform a meta-analysis due to heterogeneity in study designs.",
+    "certainty_grade": "Moderate"
+  },
+  {
+    "id": 99,
+    "knowledge_id": "ADD-EBT-001",
+    "title": "Lifestyle Interventions for Comorbid Bipolar Disorder and ADHD",
+    "domain": "Evidence-Based Treatments",
+    "summary": "Combined diet, physical activity, and sleep interventions significantly improve depressive symptoms and functioning in bipolar disorder, offering complementary strategies for comorbid ADHD.",
+    "evidence_level": "High",
+    "professional_relevance": "Very High",
+    "effect_size": "Depressive symptoms (Diet+PA): SMD -0.46 (95%CI: -0.88, -0.04, p = 0.03); Functioning (Diet+PA): SMD -0.47 (95%CI: -0.89, -0.05, p = 0.03); Depressive symptoms (Sleep): SMD -0.80 (95%CI: -1.21, -0.39, p < 0.01)",
+    "implementation_difficulty": "Medium",
+    "time_to_benefit": "4-8 weeks",
+    "key_findings": [
+      "Improved depressive symptoms",
+      "Improved functioning",
+      "Potential complementary treatment for comorbid ADHD and Bipolar Disorder"
+    ],
+    "professional_implications": "Relevant for Adult males (25-65, professional) with comorbid Bipolar Disorder and ADHD.",
+    "implementation_tips": [
+      "Consult with healthcare provider",
+      "Consider workplace accommodations",
+      "Monitor progress regularly"
+    ],
+    "research_source": "Systematic Review and Meta-Analysis of Randomized Controlled Trials - Evidence Level 5",
+    "workplace_scenarios": [
+      "General Professional Settings"
+    ],
+    "full_knowledge_point": "Combined diet, physical activity, and sleep interventions significantly improve depressive symptoms and functioning in bipolar disorder, offering complementary strategies for comorbid ADHD.",
+    "limitations": "The primary study focused on Bipolar Disorder, not specifically on ADHD-BD comorbidity. Further research is needed on multidimensional lifestyle interventions.",
+    "certainty_grade": "High"
+  }
+]

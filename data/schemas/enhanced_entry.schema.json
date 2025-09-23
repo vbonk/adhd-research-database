@@ -1,0 +1,190 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Enhanced Research Entry Schema",
+  "description": "Schema for comprehensive enhanced research findings with 3-tier enhancement and content creation support",
+  "type": "object",
+  "required": ["id", "original_entry", "tier_1_essential_enhancement", "content_creation_framework"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the enhanced research entry",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "original_entry": {
+      "type": "object",
+      "description": "Original research finding data",
+      "required": ["id", "title", "domain", "summary", "knowledge_point", "evidence_level", "professional_relevance"],
+      "properties": {
+        "id": {"type": "string"},
+        "title": {"type": "string"},
+        "domain": {"type": "string"},
+        "summary": {"type": "string"},
+        "knowledge_point": {"type": "string"},
+        "evidence_level": {"type": "string", "enum": ["High", "Medium-High", "Medium", "Low"]},
+        "professional_relevance": {"type": "string", "enum": ["Very High", "High", "Medium", "Low"]},
+        "effect_size": {"type": "string"},
+        "limitations": {"type": "string"},
+        "certainty_grade": {"type": "string"}
+      }
+    },
+    "tier_1_essential_enhancement": {
+      "type": "object",
+      "description": "Essential enhancement data for immediate implementation",
+      "required": ["actionable_implementation", "professional_context", "cost_analysis", "success_indicators"],
+      "properties": {
+        "actionable_implementation": {
+          "type": "object",
+          "properties": {
+            "immediate_actions": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["action", "timeframe", "difficulty", "cost", "resources_needed", "success_metrics"],
+                "properties": {
+                  "action": {"type": "string"},
+                  "timeframe": {"type": "string"},
+                  "difficulty": {"type": "string", "enum": ["Low", "Medium", "High"]},
+                  "cost": {"type": "string"},
+                  "resources_needed": {"type": "array", "items": {"type": "string"}},
+                  "success_metrics": {"type": "array", "items": {"type": "string"}},
+                  "implementation_steps": {"type": "array", "items": {"type": "string"}}
+                }
+              }
+            },
+            "progressive_protocol": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["phase", "objectives", "actions", "milestones"],
+                "properties": {
+                  "phase": {"type": "string"},
+                  "objectives": {"type": "array", "items": {"type": "string"}},
+                  "actions": {"type": "array", "items": {"type": "string"}},
+                  "milestones": {"type": "array", "items": {"type": "string"}},
+                  "troubleshooting": {"type": "array", "items": {"type": "object"}}
+                }
+              }
+            },
+            "workplace_applications": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["scenario", "specific_strategy", "tools_required", "implementation_steps", "success_indicators"],
+                "properties": {
+                  "scenario": {"type": "string"},
+                  "specific_strategy": {"type": "string"},
+                  "tools_required": {"type": "array", "items": {"type": "string"}},
+                  "implementation_steps": {"type": "array", "items": {"type": "string"}},
+                  "success_indicators": {"type": "array", "items": {"type": "string"}}
+                }
+              }
+            }
+          }
+        },
+        "professional_context": {
+          "type": "object",
+          "properties": {
+            "career_stages": {"type": "object"},
+            "industry_relevance": {"type": "object"},
+            "role_types": {"type": "object"}
+          }
+        },
+        "cost_analysis": {
+          "type": "object",
+          "required": ["financial_investment", "time_investment", "roi_timeline"],
+          "properties": {
+            "financial_investment": {"type": "object"},
+            "time_investment": {"type": "object"},
+            "roi_timeline": {"type": "object"}
+          }
+        },
+        "success_indicators": {
+          "type": "object",
+          "required": ["short_term", "medium_term", "long_term"],
+          "properties": {
+            "short_term": {"type": "array", "items": {"type": "string"}},
+            "medium_term": {"type": "array", "items": {"type": "string"}},
+            "long_term": {"type": "array", "items": {"type": "string"}}
+          }
+        }
+      }
+    },
+    "tier_2_strategic_enhancement": {
+      "type": "object",
+      "description": "Strategic enhancement data for personalization and optimization",
+      "properties": {
+        "personalization_targeting": {"type": "object"},
+        "barriers_solutions": {"type": "object"},
+        "integration_guidance": {"type": "object"}
+      }
+    },
+    "tier_3_future_enhancement": {
+      "type": "object",
+      "description": "Future enhancement data for advanced features",
+      "properties": {
+        "ai_personalization_support": {"type": "object"},
+        "social_features": {"type": "object"},
+        "advanced_accessibility": {"type": "object"}
+      }
+    },
+    "content_creation_framework": {
+      "type": "object",
+      "description": "Content creation support data",
+      "required": ["editorial_narrative", "source_material", "visual_content", "content_formats"],
+      "properties": {
+        "editorial_narrative": {
+          "type": "object",
+          "required": ["compelling_headlines", "hook_statements", "story_angles", "emotional_triggers"],
+          "properties": {
+            "compelling_headlines": {"type": "array", "items": {"type": "string"}},
+            "hook_statements": {"type": "array", "items": {"type": "string"}},
+            "story_angles": {"type": "array", "items": {"type": "string"}},
+            "emotional_triggers": {"type": "array", "items": {"type": "string"}}
+          }
+        },
+        "source_material": {
+          "type": "object",
+          "properties": {
+            "primary_research": {"type": "array"},
+            "supporting_research": {"type": "array"},
+            "expert_quotes": {"type": "array"}
+          }
+        },
+        "visual_content": {
+          "type": "object",
+          "properties": {
+            "infographic_data": {"type": "array"},
+            "process_flows": {"type": "array"},
+            "comparison_charts": {"type": "array"}
+          }
+        },
+        "multimedia_resources": {
+          "type": "object",
+          "properties": {
+            "video_content": {"type": "object"},
+            "demonstration_videos": {"type": "array"},
+            "interactive_tools": {"type": "array"}
+          }
+        },
+        "content_formats": {
+          "type": "object",
+          "properties": {
+            "blog_post": {"type": "object"},
+            "social_media": {"type": "object"},
+            "ebook_chapter": {"type": "object"}
+          }
+        }
+      }
+    },
+    "quality_assurance": {
+      "type": "object",
+      "description": "Quality assurance and validation data",
+      "properties": {
+        "expert_review": {"type": "object"},
+        "update_tracking": {"type": "object"},
+        "legal_compliance": {"type": "object"}
+      }
+    }
+  }
+}
+

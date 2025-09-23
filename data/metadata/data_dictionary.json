@@ -1,0 +1,192 @@
+{
+  "data_dictionary": {
+    "version": "1.0",
+    "last_updated": "2025-01-13",
+    "description": "Comprehensive data dictionary for ADD Professional Research project organized data structure",
+    
+    "directory_structure": {
+      "/data/raw/": {
+        "description": "Original, unprocessed data as received or extracted",
+        "subdirectories": {
+          "knowledge_base/": "Original research findings and batch processing results",
+          "research_sources/": "Source research materials, topics, and methodology",
+          "assessments/": "Assessment frameworks, decision trees, and intervention libraries"
+        }
+      },
+      "/data/processed/": {
+        "description": "Cleaned, structured, and enhanced data ready for use",
+        "subdirectories": {
+          "knowledge_base/": "Processed research findings and selections",
+          "enhanced/": "Comprehensive enhanced research findings with 3-tier enhancement",
+          "content_ready/": "Data structured and optimized for content creation"
+        }
+      },
+      "/data/exports/": {
+        "description": "Generated content and outputs from processed data",
+        "subdirectories": {
+          "content/": "Generated blog posts, social media, ebooks, and video scripts",
+          "visualizations/": "Infographics, charts, and process flow diagrams",
+          "reports/": "Analysis, progress, and quality reports"
+        }
+      }
+    },
+
+    "file_naming_conventions": {
+      "enhanced_research_findings": {
+        "pattern": "NNN_descriptive_name.json",
+        "example": "001_workplace_accommodations.json",
+        "description": "Three-digit number prefix for ordering, followed by descriptive snake_case name"
+      },
+      "blog_posts": {
+        "pattern": "NNN_topic_name_type.md",
+        "example": "001_workplace_accommodations_complete_guide.md",
+        "description": "Matches enhanced finding number with descriptive content type"
+      },
+      "content_ready_data": {
+        "pattern": "topic_name_format_ready.json",
+        "example": "workplace_accommodations_blog_ready.json",
+        "description": "Topic name followed by target format specification"
+      }
+    },
+
+    "data_fields": {
+      "enhanced_research_entry": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for enhanced research entry",
+          "format": "snake_case",
+          "example": "workplace_accommodations_comprehensive"
+        },
+        "original_entry": {
+          "type": "object",
+          "description": "Original research finding data from basic knowledge base",
+          "required_fields": ["id", "title", "domain", "summary", "knowledge_point", "evidence_level", "professional_relevance"]
+        },
+        "tier_1_essential_enhancement": {
+          "type": "object",
+          "description": "Essential enhancement data for immediate implementation value",
+          "components": ["actionable_implementation", "professional_context", "cost_analysis", "success_indicators"]
+        },
+        "tier_2_strategic_enhancement": {
+          "type": "object",
+          "description": "Strategic enhancement data for personalization and optimization",
+          "components": ["personalization_targeting", "barriers_solutions", "integration_guidance"]
+        },
+        "tier_3_future_enhancement": {
+          "type": "object",
+          "description": "Future enhancement data for advanced features and AI support",
+          "components": ["ai_personalization_support", "social_features", "advanced_accessibility"]
+        },
+        "content_creation_framework": {
+          "type": "object",
+          "description": "Complete content creation support data for multi-format content generation",
+          "components": ["editorial_narrative", "source_material", "visual_content", "multimedia_resources", "content_formats"]
+        }
+      },
+
+      "actionable_implementation": {
+        "immediate_actions": {
+          "type": "array",
+          "description": "Specific, time-bound actions users can take immediately",
+          "item_structure": {
+            "action": "Specific step description",
+            "timeframe": "Expected completion time (e.g., '1-2 weeks')",
+            "difficulty": "Implementation difficulty level (Low/Medium/High)",
+            "cost": "Financial investment required",
+            "resources_needed": "List of required tools, services, or support",
+            "success_metrics": "Measurable outcomes to track",
+            "implementation_steps": "Detailed step-by-step process"
+          }
+        },
+        "progressive_protocol": {
+          "type": "array",
+          "description": "Phased implementation approach with milestones",
+          "phases": ["Foundation (Weeks 1-2)", "Implementation (Weeks 3-4)", "Optimization (Weeks 5-8)"]
+        },
+        "workplace_applications": {
+          "type": "array",
+          "description": "Specific workplace scenarios with tailored strategies",
+          "scenarios": ["Open office environment", "Complex project management", "Meeting-heavy roles"]
+        }
+      },
+
+      "professional_context": {
+        "career_stages": {
+          "entry_level": "Strategies for new professionals and recent graduates",
+          "mid_career": "Approaches for experienced professionals seeking advancement",
+          "senior_executive": "Leadership-focused strategies and organizational influence"
+        },
+        "industry_relevance": {
+          "technology": "Tech-specific accommodations and strategies",
+          "finance": "Financial industry considerations and approaches",
+          "healthcare": "Healthcare environment adaptations",
+          "consulting": "Consulting-specific strategies and client interaction support"
+        },
+        "role_types": {
+          "individual_contributor": "Self-directed productivity and performance focus",
+          "manager": "Team leadership and management considerations",
+          "executive": "Strategic leadership and organizational impact"
+        }
+      },
+
+      "content_creation_framework": {
+        "editorial_narrative": {
+          "compelling_headlines": "Attention-grabbing headlines for different content formats",
+          "hook_statements": "Opening statements that engage target audience",
+          "story_angles": "Different narrative approaches for content development",
+          "emotional_triggers": "Psychological elements that resonate with audience"
+        },
+        "source_material": {
+          "primary_research": "Original research studies with full citations",
+          "supporting_research": "Corroborating evidence and related studies",
+          "expert_quotes": "Authoritative quotes from ADHD specialists and researchers"
+        },
+        "content_formats": {
+          "blog_post": "2,500-3,000 word comprehensive articles with SEO optimization",
+          "social_media": "Platform-specific content for LinkedIn, Twitter, Instagram",
+          "ebook_chapter": "3,000-5,000 word detailed chapters with supplementary materials"
+        }
+      }
+    },
+
+    "quality_standards": {
+      "data_completeness": {
+        "tier_1_essential": "100% required for all enhanced entries",
+        "tier_2_strategic": "80% minimum for top 20 entries",
+        "tier_3_future": "60% minimum for top 20 entries",
+        "content_creation": "100% required for content generation"
+      },
+      "validation_requirements": {
+        "schema_compliance": "All enhanced entries must validate against enhanced_entry.schema.json",
+        "expert_review": "Clinical and workplace validation required for tier 1 enhancements",
+        "user_testing": "Validation with target population for actionable implementation",
+        "source_verification": "All research citations must be verified and accessible"
+      },
+      "update_protocols": {
+        "review_frequency": "Quarterly review of enhanced entries for accuracy and relevance",
+        "version_control": "Semantic versioning for all enhanced entries (1.0, 1.1, 2.0)",
+        "change_tracking": "Detailed change logs for all modifications",
+        "approval_process": "Expert review required for major changes"
+      }
+    },
+
+    "usage_guidelines": {
+      "data_access": {
+        "raw_data": "Read-only access, preserve original data integrity",
+        "processed_data": "Primary working data, can be modified with proper versioning",
+        "exports": "Generated content, can be regenerated from processed data"
+      },
+      "modification_protocols": {
+        "enhanced_entries": "Follow schema validation and expert review process",
+        "content_generation": "Use automated tools where possible, manual review required",
+        "quality_assurance": "Document all changes and maintain audit trail"
+      },
+      "backup_requirements": {
+        "frequency": "Daily automated backups of all data directories",
+        "retention": "30-day rolling backup with quarterly long-term archives",
+        "verification": "Weekly backup integrity checks and restoration testing"
+      }
+    }
+  }
+}
+

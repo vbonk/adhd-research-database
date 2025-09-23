@@ -1,0 +1,14 @@
+{
+  "total_entries": 184,
+  "batch_breakdown": {
+    "batch_1": 42,
+    "batch_2": 42,
+    "batch_3": 50,
+    "batch_4": 50
+  },
+  "completion_percentage": 61.33333333333333,
+  "remaining_needed": 116,
+  "target_achieved": false,
+  "last_updated": "2025-09-12",
+  "status": "continue_processing"
+}
