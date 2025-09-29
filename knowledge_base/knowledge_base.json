@@ -279,6 +279,160 @@
       ],
       "added_date": "2025-09-15",
       "last_reviewed": "2025-09-15"
+    },
+    {
+      "id": "mecp_2025_amiri_emotional_dysregulation",
+      "title": "Pharmacological interventions for emotional dysregulation in ADHD: a meta-analysis stratified by sex and ADHD subtypes",
+      "authors": [
+        "Davoud Amiri",
+        "Lamberto Briziarelli",
+        "Enrico Tempesta",
+        "Hadi Rahimi Danesh",
+        "Amir Hossein Jalali Nadoushan",
+        "Barry Karlsson"
+      ],
+      "journal": "Middle East Current Psychiatry",
+      "publication_date": "2025-09-23",
+      "doi": "10.1186/s43045-025-00570-6",
+      "study_type": "meta_analysis",
+      "evidence_level": "1a",
+      "sample_size": 20,
+      "target_population": {
+        "age_range": "Adults",
+        "gender": "Stratified by sex",
+        "occupation": "Not specified",
+        "adhd_subtype": "Stratified by subtype"
+      },
+      "methodology": {
+        "design": "Meta-analysis of 20 peer-reviewed studies",
+        "duration": "Not specified",
+        "primary_outcomes": [
+          "Emotional dysregulation (ED) outcomes"
+        ],
+        "secondary_outcomes": []
+      },
+      "key_findings": {
+        "primary_results": "Pharmacological treatment significantly reduces emotional dysregulation in ADHD, with central stimulants demonstrating the strongest efficacy. Guanfacine and atomoxetine demonstrated moderate efficacy, especially in individuals with the inattentive subtype and in females.",
+        "effect_sizes": {},
+        "clinical_significance": "Clinicians should incorporate sex and ADHD subtype-specific stratifications to optimize personalized pharmacological strategies and improve patient outcomes.",
+        "limitations": []
+      },
+      "workplace_relevance": {
+        "productivity_impact": "Improved emotional regulation can lead to better workplace performance and interpersonal relationships.",
+        "accommodation_needs": [],
+        "career_implications": "Better management of emotional dysregulation can lead to improved career progression and job satisfaction."
+      },
+      "quality_assessment": {
+        "risk_of_bias": "Not specified",
+        "grade_rating": "Not specified",
+        "reviewer_notes": "Meta-analysis of 20 studies, providing a good level of evidence."
+      },
+      "clinical_applications": {
+        "diagnostic_utility": "Highlights the importance of assessing and treating emotional dysregulation in ADHD.",
+        "treatment_recommendations": [
+          "Central stimulants are most effective for emotional dysregulation.",
+          "Guanfacine and atomoxetine are effective alternatives, especially for inattentive subtype and females."
+        ],
+        "monitoring_parameters": [
+          "Emotional dysregulation scales"
+        ]
+      },
+      "tags": [
+        "meta_analysis",
+        "pharmacological",
+        "emotional_dysregulation",
+        "adult_adhd",
+        "sex_differences",
+        "adhd_subtypes"
+      ],
+      "added_date": "2025-09-29",
+      "last_reviewed": "2025-09-29"
+    },
+    {
+      "id": "frontiers_2025_yang_nonpharmaco_network_2",
+      "title": "Short-term and long-term effect of non-pharmacotherapy for adults with ADHD: a systematic review and network meta-analysis",
+      "authors": [
+        "Xinyue Yang",
+        "Lin Zhang",
+        "Jing Yu",
+        "Meng Wang"
+      ],
+      "journal": "Frontiers in Psychiatry",
+      "publication_date": "2025-01-31",
+      "doi": "10.3389/fpsyt.2025.1516878",
+      "study_type": "systematic_review",
+      "evidence_level": "1a",
+      "sample_size": 2289,
+      "target_population": {
+        "age_range": "Adults",
+        "gender": "Mixed",
+        "occupation": "General adult population",
+        "adhd_subtype": "All subtypes"
+      },
+      "methodology": {
+        "design": "Systematic review and network meta-analysis",
+        "duration": "Short-term and long-term follow-up",
+        "primary_outcomes": [
+          "Core ADHD symptoms",
+          "Depression",
+          "Anxiety"
+        ],
+        "secondary_outcomes": [
+          "Functional outcomes",
+          "Quality of life"
+        ]
+      },
+      "key_findings": {
+        "primary_results": "CBT showed exceptionally large effect sizes for both short-term and long-term improvement in core ADHD symptoms, depression, and anxiety. Mindfulness-based cognitive therapy recommended for patients without comorbidities.",
+        "effect_sizes": {
+          "cbt_adhd_short_term": -4.43,
+          "cbt_adhd_long_term": -3.61,
+          "cbt_depression_short_term": -4.16,
+          "cbt_depression_long_term": -3.89,
+          "cbt_anxiety_short_term": -2.12,
+          "cbt_anxiety_long_term": -7.25
+        },
+        "clinical_significance": "CBT demonstrates very large and sustained effects on ADHD symptoms and comorbid emotional disorders",
+        "limitations": [
+          "High risk of bias in 48.6% of studies",
+          "Very low to low confidence in most treatment effects"
+        ]
+      },
+      "workplace_relevance": {
+        "productivity_impact": "Long-term CBT effects particularly valuable for sustained workplace functioning",
+        "accommodation_needs": [
+          "Structured CBT program access",
+          "Time for therapy sessions"
+        ],
+        "career_implications": "Emotional regulation improvements critical for professional advancement"
+      },
+      "quality_assessment": {
+        "risk_of_bias": "moderate",
+        "grade_rating": "low",
+        "reviewer_notes": "Large effect sizes but quality concerns in underlying studies"
+      },
+      "clinical_applications": {
+        "diagnostic_utility": "Supports CBT as primary non-pharmacological intervention",
+        "treatment_recommendations": [
+          "CBT for comprehensive symptom management",
+          "Mindfulness-based therapy for uncomplicated cases"
+        ],
+        "monitoring_parameters": [
+          "ADHD symptom scales",
+          "Depression and anxiety measures",
+          "Long-term functional outcomes"
+        ]
+      },
+      "tags": [
+        "systematic_review",
+        "network_meta_analysis",
+        "non_pharmacological",
+        "cbt",
+        "mindfulness",
+        "long_term_outcomes"
+      ],
+      "added_date": "2025-09-29",
+      "last_reviewed": "2025-09-29"
     }
   ],
   "evidence_levels": {
