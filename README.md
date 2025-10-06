@@ -21,7 +21,7 @@ A comprehensive PostgreSQL database with Prisma ORM for storing and managing evi
 
 ## 📊 Current Database Content
 
-- **3 High-Quality Research Entries** (2025 studies)
+- **7 High-Quality Research Entries** (2025 studies, 2025 studies, including 4 new entries from Oct 2025) a
 - **15 Research Tags** for categorization
 - **2 Assessment Tools** (ASRS, AAQoL)
 - **2 Treatment Recommendations** (Pharmacological & Psychological)
