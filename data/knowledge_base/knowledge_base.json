@@ -8359,5 +8359,117 @@
     "full_knowledge_point": "Adult ADHD diagnosis is complex due to masking and symptom overlap, often leading to late diagnosis in professional males (25-65).",
     "limitations": "Review article, specific data on chronic health monitoring for this population is limited within this source.",
     "certainty_grade": "Moderate"
+  },
+  {
+    "id": 282,
+    "knowledge_id": "ADHD-NIBS-2025",
+    "title": "Comparative efficacy of non-invasive brain stimulation for ADHD",
+    "domain": "Evidence-Based Treatments",
+    "summary": "A systematic review and network meta-analysis of 37 RCTs (N=1,615) found that while no NIBS interventions significantly improved inhibitory control compared to sham, specific tDCS protocols showed promise for improving working memory and cognitive flexibility. Transcranial pulse stimulation and transcranial alternating current stimulation showed favorable but non-significant trends for inattention.",
+    "evidence_level": "1A",
+    "professional_relevance": "High",
+    "effect_size": "SMD for working memory: 0.95 (95% CI: 0.05\u20131.84) and 0.86 (95% CI: 0.28\u20131.45). SMD for cognitive flexibility: -0.76 (95% CI: -1.31 to -0.21).",
+    "implementation_difficulty": "High",
+    "time_to_benefit": "Varies",
+    "key_findings": [
+      "Anodal tDCS over the left DLPFC plus cathodal tDCS over the right DLPFC enhanced working memory.",
+      "Anodal tDCS over the left DLPFC plus cathodal tDCS over the right supraorbital area improved cognitive flexibility.",
+      "No significant improvement in core ADHD symptoms of inattention or hyperactivity/impulsivity."
+    ],
+    "professional_implications": "NIBS may be a potential future treatment for cognitive deficits in adult ADHD, which could benefit professionals in demanding careers. However, it is not yet a first-line treatment.",
+    "implementation_tips": [
+      "Consult with a qualified healthcare professional to determine suitability for NIBS treatment."
+    ],
+    "research_source": "Frontiers in Neurology, October 2, 2025, DOI: 10.3389/fneur.2025.1650154",
+    "workplace_scenarios": [
+      "Professional settings requiring high cognitive function."
+    ],
+    "full_knowledge_point": "This systematic review and network meta-analysis of 37 RCTs (N=1,615) on non-invasive brain stimulation (NIBS) for ADHD revealed that while no NIBS interventions significantly improved inhibitory control versus sham controls, certain transcranial direct current stimulation (tDCS) protocols demonstrated efficacy for specific cognitive domains. Anodal tDCS over the left DLPFC combined with cathodal tDCS over the right DLPFC significantly improved working memory (SMD = 0.95), and anodal tDCS over the right IFC with cathodal tDCS over the right supraorbital area also showed a significant benefit (SMD = 0.86). For cognitive flexibility, anodal tDCS over the left DLPFC plus cathodal tDCS over the right supraorbital area was effective (SMD = -0.76). While transcranial pulse stimulation and transcranial alternating current stimulation showed trends toward improving inattention, these did not reach statistical significance. No NIBS interventions significantly improved hyperactivity or impulsivity.",
+    "limitations": "The study includes adult participants, but specific age ranges are not detailed in the abstract, which may limit direct applicability to the 25-55 age range. The lack of significant improvement in core ADHD symptoms is a major limitation for clinical use.",
+    "certainty_grade": "High"
+  },
+  {
+    "id": 283,
+    "knowledge_id": "ADHD-MPH-Challenge-2025",
+    "title": "Clinical response to single-dose methylphenidate challenge predicts long-term treatment response",
+    "domain": "Evidence-Based Treatments",
+    "summary": "A prospective clinical trial (N=60) in adult males with ADHD (18-45 years) found that clinico-neuropsychological changes after a single dose of methylphenidate (MPH) are indicative of treatment response at two months. This suggests that an acute MPH challenge could be a useful tool for personalizing treatment.",
+    "evidence_level": "1B",
+    "professional_relevance": "Very High",
+    "effect_size": "Univariate regressions showed significant associations (p < 0.001). Machine learning models showed correlations up to r = 0.69.",
+    "implementation_difficulty": "Medium",
+    "time_to_benefit": "Immediate for prediction, 2 months for treatment response",
+    "key_findings": [
+      "Significant association between single-dose and two-month treatment response.",
+      "Large effect sizes in predicting treatment outcomes.",
+      "Potential to reduce trial-and-error in medication management."
+    ],
+    "professional_implications": "This finding could streamline the medication selection and titration process for professional men with ADHD, leading to faster symptom control and improved workplace productivity.",
+    "implementation_tips": [
+      "A single-dose MPH challenge can be used to predict longer-term treatment response."
+    ],
+    "research_source": "Translational Psychiatry, October 6, 2025, DOI: 10.1038/s41398-025-03557-3",
+    "workplace_scenarios": [
+      "Professional settings where rapid and effective ADHD treatment is critical."
+    ],
+    "full_knowledge_point": "This prospective, within-subject, single-dose, placebo-controlled cross-over trial included 60 adult males with ADHD (aged 18-45). The study found that the clinical and neuropsychological response to a single 20mg dose of methylphenidate (MPH) was significantly associated with treatment response after two months of routine MPH treatment. Univariate regressions showed a strong association for hyperactivity/impulsivity and Qb scores (p < 0.001). Multivariable machine learning models, including acute response and baseline characteristics, yielded significant correlations between predicted and actual outcomes (up to r = 0.69). These findings suggest that an acute MPH challenge could be a valuable clinical tool to predict longer-term treatment response and help individualize treatment approaches for adult ADHD.",
+    "limitations": "The study was conducted on a male-only sample aged 18-45, which may not be fully generalizable to women or older men. Further validation in larger, more heterogeneous samples is needed.",
+    "certainty_grade": "High"
+  },
+  {
+    "id": 284,
+    "knowledge_id": "ADHD-Symptom-Network-2025",
+    "title": "Symptom Network Analysis of ADHD and Emotional Symptoms",
+    "domain": "Comorbidity",
+    "summary": "A symptom network analysis of a large, nationally representative sample (N=33,546) found that while emotional dysregulation (ED) symptoms have low centrality in the ADHD symptom network, they play a key role as bridge symptoms connecting the inattentive and hyperactive/impulsive domains.",
+    "evidence_level": "2A",
+    "professional_relevance": "High",
+    "effect_size": "N/A",
+    "implementation_difficulty": "Low",
+    "time_to_benefit": "N/A",
+    "key_findings": [
+      "Emotional dysregulation symptoms have low centrality in the ADHD network.",
+      "Emotional dysregulation symptoms act as important bridge symptoms between inattention and hyperactivity/impulsivity.",
+      "Supports the traditional two-factor model of ADHD but highlights the integrative role of emotional symptoms."
+    ],
+    "professional_implications": "This research underscores the importance of assessing and addressing emotional dysregulation in adults with ADHD, as it may be a key factor in the interplay between core symptom domains and overall functional impairment.",
+    "implementation_tips": [
+      "Assess for emotional dysregulation in adults with ADHD."
+    ],
+    "research_source": "Journal of Clinical Psychiatry, October 1, 2025, DOI: 10.4088/JCP.24m15287",
+    "workplace_scenarios": [
+      "General Professional Settings"
+    ],
+    "full_knowledge_point": "This study analyzed data from the National Epidemiologic Survey on Alcohol and Related Conditions (NESARC-II, N=33,546) to examine the network structure of 18 ADHD symptoms and 4 emotional dysregulation (ED) variables. The results showed that ED symptoms had the lowest centrality, suggesting they are not core drivers of the ADHD diagnosis. However, two ED symptoms were among the four most influential bridge symptoms, connecting the inattentive and hyperactive/impulsive dimensions of ADHD. This highlights the important, albeit secondary, role of emotional symptoms within the broader ADHD construct.",
+    "limitations": "The data used in this study were from 2004-2005, and diagnostic criteria and understanding of ADHD have evolved since then. The cross-sectional nature of the data limits causal inferences.",
+    "certainty_grade": "Moderate"
+  },
+  {
+    "id": 285,
+    "knowledge_id": "ADHD-Neurofeedback-2025",
+    "title": "Neurofeedback for ADHD: A Meta-Analysis",
+    "domain": "Evidence-Based Treatments",
+    "summary": "A meta-analysis of 17 RCTs found no evidence of efficacy for neurofeedback as a treatment for ADHD in youths. The pooled effect size for both parent and teacher ratings of inattention and hyperactivity/impulsivity centered on zero.",
+    "evidence_level": "1A",
+    "professional_relevance": "High",
+    "effect_size": "Pooled effect sizes centered on zero.",
+    "implementation_difficulty": "High",
+    "time_to_benefit": "N/A",
+    "key_findings": [
+      "No significant improvement in parent-rated inattention or hyperactivity/impulsivity.",
+      "No significant improvement in teacher-rated inattention or hyperactivity/impulsivity.",
+      "Larger, better-controlled studies showed no effect."
+    ],
+    "professional_implications": "This meta-analysis provides strong evidence that neurofeedback is not an effective treatment for core ADHD symptoms and should not be recommended as a primary intervention.",
+    "implementation_tips": [
+      "Do not recommend neurofeedback as a primary treatment for ADHD."
+    ],
+    "research_source": "ADHD Evidence Project, October 1, 2025 (referencing Rahmani et al., Neurocase, 2022)",
+    "workplace_scenarios": [
+      "General Professional Settings"
+    ],
+    "full_knowledge_point": "This blog post from the ADHD Evidence Project summarizes a 2022 meta-analysis by Rahmani et al. that examined the efficacy of neurofeedback for ADHD. The meta-analysis included 17 randomized controlled trials (RCTs). The results showed that for both parent and teacher ratings, the pooled effect sizes for changes in inattention and hyperactivity/impulsivity were centered on zero, indicating no treatment benefit. The authors of the original meta-analysis concluded that neurofeedback is not an efficacious clinical method for ADHD.",
+    "limitations": "The meta-analysis focused on youths, but the findings are likely applicable to adults as well, given the lack of evidence for efficacy. The blog post is a secondary source, but it accurately reflects the findings of the original meta-analysis.",
+    "certainty_grade": "High"
   }
 ]
