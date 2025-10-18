@@ -2,19 +2,57 @@ import os
 import subprocess
 import json
 from typing import Dict, List, Any
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 class PrismaClient:
     """Simple wrapper for Prisma CLI operations"""
+
+    def __init__(self, schema_path: str = None, db_url: str = None):
+        # Use environment variables with fallback defaults
+        self.schema_path = schema_path or os.getenv('PRISMA_SCHEMA_PATH') or os.path.expanduser("~/Projects/adhd-research-database/prisma/schema.prisma")
+        self.db_url = db_url or os.getenv('DATABASE_URL')
+
+        if not self.db_url:
+            raise ValueError(
+                "DATABASE_URL environment variable is required. "
+                "Please create a .env file based on .env.example and set DATABASE_URL."
+            )
+
+        self.psql_path = os.getenv('PSQL_PATH', '/opt/homebrew/opt/postgresql@14/bin/psql')
     
-    def __init__(self, schema_path: str = None):
-        self.schema_path = schema_path or "/Users/tony/Projects/adhd-research-database/prisma/schema.prisma"
-        self.db_url = "postgresql://adhd_user:adhd_password@localhost:5432/adhd_research"
-    
-    def query_raw(self, query: str) -> List[Dict[str, Any]]:
-        """Execute raw SQL query using psql"""
+    def query_raw(self, query: str, params: tuple = None) -> List[Dict[str, Any]]:
+        """Execute raw SQL query using psql
+
+        Args:
+            query: SQL query string (use %s for parameterized queries)
+            params: Optional tuple of parameters for parameterized queries
+        """
         try:
+            # If params are provided, escape them for PostgreSQL
+            if params:
+                # This is a simple approach - in production consider using psycopg2
+                escaped_params = []
+                for param in params:
+                    if param is None:
+                        escaped_params.append('NULL')
+                    elif isinstance(param, (int, float)):
+                        escaped_params.append(str(param))
+                    else:
+                        # Escape single quotes and wrap in quotes
+                        escaped_param = str(param).replace("'", "''")
+                        escaped_params.append(f"'{escaped_param}'")
+
+                # Replace %s placeholders with escaped values
+                formatted_query = query
+                for param in escaped_params:
+                    formatted_query = formatted_query.replace('%s', param, 1)
+                query = formatted_query
+
             cmd = [
-                "/opt/homebrew/opt/postgresql@14/bin/psql", 
+                self.psql_path,
                 self.db_url,
                 "-c", query,
                 "-t",  # tuples only
@@ -134,20 +172,27 @@ class PrismaClient:
         return self.query_raw(query)
     
     def search_research_entries(self, search_term: str) -> List[Dict[str, Any]]:
-        """Search research entries by title, authors, or journal"""
-        query = f"""
-        SELECT * FROM research_entries 
-        WHERE title ILIKE '%{search_term}%' 
-           OR array_to_string(authors, ', ') ILIKE '%{search_term}%'
-           OR journal ILIKE '%{search_term}%'
+        """Search research entries by title, authors, or journal
+
+        SECURITY: Uses parameterized query to prevent SQL injection
+        """
+        # Use parameterized query with %s placeholders
+        query = """
+        SELECT * FROM research_entries
+        WHERE title ILIKE '%' || %s || '%'
+           OR array_to_string(authors, ', ') ILIKE '%' || %s || '%'
+           OR journal ILIKE '%' || %s || '%'
         ORDER BY publication_date DESC;
         """
-        return self.query_raw(query)
+        return self.query_raw(query, (search_term, search_term, search_term))
     
     def get_research_by_evidence_level(self, evidence_level: str) -> List[Dict[str, Any]]:
-        """Get research entries by evidence level"""
-        query = f"SELECT * FROM research_entries WHERE evidence_level = '{evidence_level}' ORDER BY publication_date DESC;"
-        return self.query_raw(query)
+        """Get research entries by evidence level
+
+        SECURITY: Uses parameterized query to prevent SQL injection
+        """
+        query = "SELECT * FROM research_entries WHERE evidence_level = %s ORDER BY publication_date DESC;"
+        return self.query_raw(query, (evidence_level,))
     
     def get_workplace_focused_research(self) -> List[Dict[str, Any]]:
         """Get research entries with workplace relevance"""
