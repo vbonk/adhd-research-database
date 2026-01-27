@@ -1,11 +1,27 @@
 # ADHD Research Database
 
-A comprehensive PostgreSQL database with Prisma ORM for storing and managing evidence-based ADHD research data, specifically focused on professional men aged 25-55. The system includes a complete web API and frontend interface for accessing and analyzing research findings.
-
 ![ADHD Research Database](https://img.shields.io/badge/Evidence--Based-Research-blue)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-14+-blue)
 ![Flask](https://img.shields.io/badge/Flask-3.1.1-green)
 ![Prisma](https://img.shields.io/badge/Prisma-6.16.2-purple)
+
+> A comprehensive PostgreSQL database with Prisma ORM for storing and managing evidence-based ADHD research data, specifically focused on professional men aged 25-55. The system includes a complete web API and frontend interface for accessing and analyzing research findings.
+
+## Table of Contents
+
+- [Features](#-features)
+- [Current Database Content](#-current-database-content)
+- [Quick Start](#-quick-start)
+- [Architecture](#️-architecture)
+- [API Documentation](#-api-documentation)
+- [Research Focus Areas](#-research-focus-areas)
+- [Deployment](#-deployment)
+- [Documentation](#-documentation)
+- [Research Data Sources](#-research-data-sources)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Research Ethics](#-research-ethics)
+- [Support](#-support)
 
 ## 🎯 Features
 
@@ -31,10 +47,12 @@ A comprehensive PostgreSQL database with Prisma ORM for storing and managing evi
 
 ### Prerequisites
 
-- PostgreSQL 14+
-- Node.js 22.13.0+
-- Python 3.11+
-- Git
+| Requirement | Version | Purpose |
+|-------------|---------|---------|
+| **PostgreSQL** | 14+ | Database backend |
+| **Node.js** | 22.13.0+ | Prisma ORM runtime |
+| **Python** | 3.11+ | Flask API backend |
+| **Git** | Any | Version control |
 
 ### Installation
 
@@ -102,21 +120,25 @@ python src/main.py
 
 The database uses a normalized structure with the following core tables:
 
-- **research_entries**: Main research records
-- **target_populations**: Demographics and population data
-- **methodologies**: Study design and methodology details
-- **key_findings**: Primary results and effect sizes
-- **workplace_relevance**: Professional impact assessments
-- **quality_assessments**: Evidence quality ratings
-- **clinical_applications**: Treatment and diagnostic applications
-- **tags**: Research categorization system
+| Table | Purpose |
+|-------|---------|
+| **research_entries** | Main research records |
+| **target_populations** | Demographics and population data |
+| **methodologies** | Study design and methodology details |
+| **key_findings** | Primary results and effect sizes |
+| **workplace_relevance** | Professional impact assessments |
+| **quality_assessments** | Evidence quality ratings |
+| **clinical_applications** | Treatment and diagnostic applications |
+| **tags** | Research categorization system |
 
 ### Technology Stack
 
-- **Database**: PostgreSQL 14 with Prisma ORM
-- **Backend**: Flask 3.1.1 (Python 3.11)
-- **Frontend**: HTML5/CSS3/JavaScript (Vanilla)
-- **Environment**: Ubuntu 22.04, Node.js 22.13.0
+| Layer | Technology | Details |
+|-------|------------|---------|
+| **Database** | PostgreSQL 14 | Prisma ORM for schema management |
+| **Backend** | Flask 3.1.1 | Python 3.11 REST API |
+| **Frontend** | HTML5/CSS3/JavaScript | Vanilla JS for simplicity |
+| **Environment** | Ubuntu 22.04 | Node.js 22.13.0 runtime |
 
 ## 📡 API Documentation
 
@@ -128,14 +150,20 @@ http://localhost:5000/api
 ### Endpoints
 
 #### Research Entries
-- `GET /research` - Get all research entries with optional filtering
-- `GET /research/{id}` - Get specific research entry with full details
-- `GET /research/stats` - Get database statistics
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/research` | GET | Get all research entries with optional filtering |
+| `/research/{id}` | GET | Get specific research entry with full details |
+| `/research/stats` | GET | Get database statistics |
 
 #### Treatment & Assessment
-- `GET /treatments` - Get all treatment recommendations
-- `GET /assessments` - Get all assessment tools
-- `GET /tags` - Get all available tags
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/treatments` | GET | Get all treatment recommendations |
+| `/assessments` | GET | Get all assessment tools |
+| `/tags` | GET | Get all available tags |
 
 ### Query Parameters
 - `evidence_level`: Filter by evidence level (LEVEL_1A, LEVEL_1B, etc.)
