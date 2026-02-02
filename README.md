@@ -4,6 +4,7 @@
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-14+-blue)
 ![Flask](https://img.shields.io/badge/Flask-3.1.1-green)
 ![Prisma](https://img.shields.io/badge/Prisma-6.16.2-purple)
+![Documentation](https://img.shields.io/badge/docs-22%20guides-orange)
 
 > A comprehensive PostgreSQL database with Prisma ORM for storing and managing evidence-based ADHD research data, specifically focused on professional men aged 25-55. The system includes a complete web API and frontend interface for accessing and analyzing research findings.
 
@@ -45,6 +46,8 @@
 
 ## 🚀 Quick Start
 
+> **Prefer Docker?** See the [5-minute quickstart guide](docs/quickstart.md) for Docker setup.
+
 ### Prerequisites
 
 | Requirement | Version | Purpose |
@@ -58,7 +61,7 @@
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/adhd-research-database.git
+git clone https://github.com/vbonk/adhd-research-database.git
 cd adhd-research-database
 ```
 
@@ -299,8 +302,8 @@ This database is designed for:
 
 For technical support or research contributions:
 - Create an issue in this repository
-- Review the documentation in `/docs`
-- Check the troubleshooting section in [DATABASE_DOCUMENTATION.md](DATABASE_DOCUMENTATION.md)
+- Review the [full documentation](docs/index.md)
+- Check [troubleshooting guides](docs/troubleshooting/common-issues.md) for common issues
 
 ## 🏆 Acknowledgments
 
