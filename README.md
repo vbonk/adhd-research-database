@@ -223,9 +223,32 @@ See [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) for detailed instructions.
 
 ## 📚 Documentation
 
-- [Database Documentation](DATABASE_DOCUMENTATION.md) - Comprehensive database guide
-- [Deployment Guide](DEPLOYMENT_GUIDE.md) - Production deployment instructions
-- [API Documentation](DATABASE_DOCUMENTATION.md#api-documentation) - Complete API reference
+### Quick Links
+
+| Document | Description |
+|----------|-------------|
+| [Quickstart Guide](docs/quickstart.md) | Get running in 5 minutes |
+| [Full Documentation](docs/index.md) | Complete documentation hub |
+
+### By Audience
+
+| Audience | Guides |
+|----------|--------|
+| **Users** | [Getting Started](docs/guides/user/getting-started.md) · [Research Explorer](docs/guides/user/research-explorer.md) · [Assessments](docs/guides/user/assessments.md) |
+| **Healthcare** | [Clinical Use](docs/guides/healthcare/clinical-use.md) · [Treatment Planning](docs/guides/healthcare/treatment-planning.md) |
+| **Admins** | [Deployment](docs/guides/admin/deployment.md) · [Configuration](docs/guides/admin/configuration.md) · [Monitoring](docs/guides/admin/monitoring.md) |
+| **Developers** | [Architecture](docs/guides/developer/architecture.md) · [Database](docs/guides/developer/database.md) · [API Development](docs/guides/developer/api-development.md) · [Contributing](docs/guides/developer/contributing.md) |
+
+### Reference & Troubleshooting
+
+| Type | Documents |
+|------|-----------|
+| **Reference** | [API Reference](docs/reference/api.md) · [Database Schema](docs/reference/database-schema.md) · [Data Formats](docs/reference/data-formats.md) · [Glossary](docs/reference/glossary.md) |
+| **Troubleshooting** | [Common Issues](docs/troubleshooting/common-issues.md) · [Database Issues](docs/troubleshooting/database-issues.md) · [Docker Issues](docs/troubleshooting/docker-issues.md) · [Friction Log](docs/troubleshooting/friction-log.md) |
+
+### Legacy Documentation
+
+Archived documentation from earlier versions is available in [docs-archive/](docs-archive/).
 
 ## 🧪 Research Data Sources
 
